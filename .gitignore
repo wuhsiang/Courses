@@ -1,0 +1,35 @@
+# define the files to be ignored
+
+# ignore temporal files produced by LaTeX
+*.aux
+*.blg
+*.dvi
+*.log
+*.ps
+*.spl
+*.synctex.gz
+
+# ignore temporal files in the eps-pdf converting process
+*-eps-converted-to.pdf
+
+# ignore temporal files produced by beamer
+*.nav
+*.snm
+*.toc
+*.out
+
+# ignore R history
+*.Rhistory
+
+# ignore word template files
+~$*.doc
+
+
+# ignore temporal files produced by .Rnw files
+*-concordance.tex
+*unnamed-chunk*.pdf
+
+# ignore folds
+Notes
+Manuscript_files
+*_cache

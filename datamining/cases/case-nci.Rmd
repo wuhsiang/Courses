@@ -1,0 +1,83 @@
+---
+title: "聚类模型案例：癌细胞基因表达数据"
+author: "吴翔"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+options(digits = 3)
+
+```
+## 概述
+
+我们通过R语言`ISLR`包中64个细胞的6830个基因表达数据作为案例，来阐述如何使用如下聚类模型：
+
+- 系统聚类
+- $K$均值聚类
+
+数据集`NCI60`包含基因表达数据矩阵`NCI60$data`以及癌细胞系的类型`NCI60$labs`。
+
+```{r}
+
+# clean the work directory
+rm(list = ls())
+
+# set seeds
+set.seed(123)
+
+# read dataset
+suppressMessages(library(ISLR))
+suppressMessages(library(tidyverse))
+data("NCI60")
+# display the variables
+str(NCI60)
+# summary of dataset
+ncidat <- NCI60$data
+ncilab <- NCI60$labs
+# types of cancer cells
+table(ncilab)
+
+```
+
+## 系统聚类
+
+```{r}
+
+# scaling
+ncidat <- scale(ncidat)
+
+# clustering
+nci.dist <- dist(ncidat, method = "euclidean", p = 2)
+hc.out <- hclust(nci.dist)
+plot(hc.out, labels = ncilab, main = "complete linkage", xlab = "", ylab = "")
+
+```
+
+在以上谱系图上某个高度切割，可以得到指定类数的聚类，例如类别数量$s = 4$。
+
+```{r}
+
+# four clusters
+table(cutree(hc.out, 4))
+
+# plot
+plot(hc.out, labels = ncilab)
+abline(h = 139, col = "red")
+
+```
+
+## $K$均值聚类
+
+```{r}
+
+# kmeans
+km.out <- kmeans(ncidat, 4, nstart = 20)
+km.cluster <- km.out$cluster
+names(km.cluster) <- ncilab
+plot(km.cluster)
+km.cluster
+
+```

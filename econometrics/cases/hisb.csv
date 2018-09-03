@@ -1,0 +1,1815 @@
+id,age,gender,race,education,income,y
+1,49,Female,White,Under College,"$75,000 or more",Internet
+3,72,Male,White,Under College,"$20,000 to $74,999",Others
+4,38,Female,White,Under College,"$20,000 to $74,999",Internet
+5,55,Male,White,College and above,"$75,000 or more",Internet
+6,67,Male,White,College and above,"$20,000 to $74,999",Internet
+8,40,Female,Others,College and above,"$75,000 or more",Internet
+9,86,Male,White,College and above,"$75,000 or more",Internet
+11,40,Female,White,College and above,"$75,000 or more",Internet
+12,73,Male,White,Under College,"$20,000 to $74,999",Others
+14,52,Male,White,Under College,"$75,000 or more",Internet
+15,59,Female,White,College and above,"$75,000 or more",Internet
+16,64,Male,White,College and above,"$20,000 to $74,999",Internet
+19,43,Male,White,College and above,"$75,000 or more",Internet
+20,43,Male,White,Under College,"$20,000 to $74,999",Internet
+21,72,Female,White,College and above,"$75,000 or more",Doctor
+23,60,Male,White,College and above,"$75,000 or more",Internet
+24,65,Female,White,College and above,"$20,000 to $74,999",Internet
+27,80,Female,Others,College and above,"$20,000 to $74,999",Doctor
+29,55,Male,White,Under College,"$0 to $19,999",Internet
+30,59,Female,White,College and above,"$75,000 or more",Internet
+34,48,Female,White,College and above,"$75,000 or more",Internet
+35,73,Female,Others,College and above,"$20,000 to $74,999",Internet
+36,70,Male,White,College and above,"$75,000 or more",Internet
+37,53,Female,White,College and above,"$75,000 or more",Internet
+38,67,Male,White,College and above,"$75,000 or more",Internet
+40,75,Male,White,Under College,"$0 to $19,999",Doctor
+41,65,Male,White,Under College,"$20,000 to $74,999",Others
+42,35,Male,White,College and above,"$75,000 or more",Internet
+44,60,Male,White,Under College,"$75,000 or more",Internet
+45,53,Male,Others,College and above,"$75,000 or more",Internet
+46,57,Male,White,College and above,"$75,000 or more",Doctor
+49,42,Female,White,Under College,"$20,000 to $74,999",Internet
+50,28,Female,White,Under College,"$20,000 to $74,999",Internet
+51,64,Female,White,College and above,"$20,000 to $74,999",Doctor
+53,89,Female,White,Under College,"$0 to $19,999",Doctor
+54,37,Female,Others,College and above,"$75,000 or more",Internet
+55,38,Female,White,College and above,"$20,000 to $74,999",Internet
+58,33,Female,White,College and above,"$75,000 or more",Internet
+59,33,Female,White,College and above,"$75,000 or more",Doctor
+60,43,Male,White,Under College,"$75,000 or more",Internet
+62,47,Male,White,Under College,"$75,000 or more",Doctor
+64,82,Female,White,Under College,"$20,000 to $74,999",Others
+66,72,Female,White,Under College,"$20,000 to $74,999",Internet
+67,64,Male,White,College and above,"$75,000 or more",Internet
+68,63,Male,White,College and above,"$75,000 or more",Others
+69,67,Female,White,College and above,"$20,000 to $74,999",Internet
+70,76,Female,White,College and above,"$75,000 or more",Internet
+71,77,Female,White,Under College,"$20,000 to $74,999",Doctor
+74,70,Male,White,College and above,"$75,000 or more",Internet
+75,91,Female,White,Under College,"$75,000 or more",Doctor
+77,54,Male,White,College and above,"$75,000 or more",Internet
+78,61,Female,White,College and above,"$0 to $19,999",Internet
+80,90,Female,White,College and above,"$20,000 to $74,999",Doctor
+82,53,Female,White,Under College,"$75,000 or more",Others
+83,44,Male,Others,College and above,"$0 to $19,999",Doctor
+84,71,Male,White,Under College,"$75,000 or more",Internet
+87,66,Female,White,Under College,"$0 to $19,999",Internet
+88,74,Female,Others,College and above,"$20,000 to $74,999",Internet
+90,63,Female,White,Under College,"$75,000 or more",Internet
+91,81,Male,White,College and above,"$75,000 or more",Doctor
+93,27,Male,Others,College and above,"$20,000 to $74,999",Internet
+96,50,Female,White,College and above,"$75,000 or more",Others
+98,40,Female,White,College and above,"$75,000 or more",Internet
+100,67,Male,White,Under College,"$75,000 or more",Others
+101,64,Female,White,Under College,"$20,000 to $74,999",Internet
+102,24,Male,White,College and above,"$20,000 to $74,999",Internet
+103,70,Male,White,College and above,"$75,000 or more",Internet
+104,40,Female,White,Under College,"$20,000 to $74,999",Internet
+105,41,Female,White,College and above,"$75,000 or more",Internet
+106,36,Female,White,College and above,"$75,000 or more",Internet
+108,51,Male,White,Under College,"$75,000 or more",Internet
+109,61,Male,White,College and above,"$75,000 or more",Internet
+111,64,Female,White,College and above,"$75,000 or more",Internet
+112,48,Male,White,Under College,"$20,000 to $74,999",Internet
+114,73,Female,White,Under College,"$0 to $19,999",Doctor
+115,78,Female,White,Under College,"$20,000 to $74,999",Internet
+116,62,Female,White,Under College,"$20,000 to $74,999",Internet
+118,38,Male,White,Under College,"$75,000 or more",Internet
+119,61,Female,White,College and above,"$75,000 or more",Internet
+120,74,Male,White,College and above,"$75,000 or more",Internet
+121,69,Male,White,Under College,"$20,000 to $74,999",Others
+124,60,Female,White,College and above,"$20,000 to $74,999",Internet
+126,65,Male,White,College and above,"$75,000 or more",Internet
+128,35,Female,White,College and above,"$75,000 or more",Internet
+130,53,Female,White,College and above,"$20,000 to $74,999",Internet
+131,25,Male,White,College and above,"$20,000 to $74,999",Internet
+132,47,Female,White,College and above,"$75,000 or more",Internet
+133,74,Male,White,College and above,"$75,000 or more",Internet
+135,73,Male,White,College and above,"$75,000 or more",Others
+136,60,Male,White,Under College,"$75,000 or more",Internet
+137,30,Male,Others,College and above,"$20,000 to $74,999",Internet
+138,54,Male,White,College and above,"$20,000 to $74,999",Internet
+143,65,Male,White,College and above,"$75,000 or more",Internet
+144,50,Male,White,College and above,"$75,000 or more",Doctor
+145,59,Male,White,Under College,"$75,000 or more",Doctor
+147,55,Female,White,Under College,"$20,000 to $74,999",Internet
+149,66,Male,White,Under College,"$20,000 to $74,999",Internet
+150,39,Female,White,College and above,"$75,000 or more",Internet
+152,49,Female,White,Under College,"$20,000 to $74,999",Internet
+153,63,Female,White,Under College,"$20,000 to $74,999",Internet
+155,42,Female,White,Under College,"$20,000 to $74,999",Internet
+157,86,Male,White,College and above,"$20,000 to $74,999",Others
+158,28,Female,White,College and above,"$20,000 to $74,999",Internet
+159,66,Female,White,Under College,"$20,000 to $74,999",Internet
+162,76,Male,White,Under College,"$20,000 to $74,999",Internet
+163,31,Female,White,Under College,"$20,000 to $74,999",Internet
+164,75,Female,White,Under College,"$20,000 to $74,999",Others
+165,74,Male,White,Under College,"$20,000 to $74,999",Doctor
+167,67,Female,White,College and above,"$20,000 to $74,999",Internet
+170,58,Male,White,College and above,"$75,000 or more",Internet
+171,86,Female,White,College and above,"$75,000 or more",Doctor
+172,35,Female,White,College and above,"$75,000 or more",Internet
+175,60,Female,White,College and above,"$75,000 or more",Internet
+176,72,Male,White,College and above,"$20,000 to $74,999",Internet
+177,60,Female,White,Under College,"$20,000 to $74,999",Internet
+178,70,Female,White,College and above,"$20,000 to $74,999",Internet
+179,68,Male,White,Under College,"$75,000 or more",Internet
+182,58,Male,White,Under College,"$75,000 or more",Internet
+183,69,Female,White,Under College,"$0 to $19,999",Internet
+186,46,Female,Others,College and above,"$75,000 or more",Internet
+189,56,Female,White,College and above,"$75,000 or more",Internet
+190,58,Female,White,Under College,"$20,000 to $74,999",Internet
+191,58,Male,White,College and above,"$75,000 or more",Internet
+192,43,Female,White,College and above,"$75,000 or more",Internet
+195,37,Female,White,College and above,"$75,000 or more",Internet
+197,45,Female,White,Under College,"$20,000 to $74,999",Internet
+199,25,Male,White,Under College,"$20,000 to $74,999",Internet
+200,23,Female,White,College and above,"$75,000 or more",Internet
+201,29,Female,White,Under College,"$0 to $19,999",Internet
+202,50,Male,White,Under College,"$75,000 or more",Internet
+203,46,Male,White,College and above,"$75,000 or more",Internet
+206,54,Female,White,College and above,"$20,000 to $74,999",Internet
+208,68,Female,White,Under College,"$20,000 to $74,999",Internet
+210,55,Female,White,College and above,"$20,000 to $74,999",Doctor
+211,57,Female,White,Under College,"$0 to $19,999",Doctor
+212,29,Female,White,Under College,"$0 to $19,999",Internet
+213,57,Female,White,College and above,"$75,000 or more",Internet
+214,59,Female,White,Under College,"$75,000 or more",Internet
+215,64,Male,White,Under College,"$0 to $19,999",Doctor
+216,61,Female,White,Under College,"$20,000 to $74,999",Others
+218,56,Female,White,College and above,"$75,000 or more",Internet
+219,66,Female,White,College and above,"$20,000 to $74,999",Internet
+221,45,Female,White,Under College,"$20,000 to $74,999",Internet
+223,41,Male,White,Under College,"$75,000 or more",Internet
+224,63,Male,White,College and above,"$20,000 to $74,999",Internet
+226,46,Female,White,College and above,"$75,000 or more",Internet
+229,48,Male,White,College and above,"$75,000 or more",Internet
+230,53,Male,White,Under College,"$75,000 or more",Internet
+235,49,Male,White,College and above,"$75,000 or more",Internet
+237,53,Female,White,Under College,"$20,000 to $74,999",Doctor
+238,69,Male,White,Under College,"$20,000 to $74,999",Doctor
+243,53,Male,White,College and above,"$75,000 or more",Doctor
+244,59,Female,White,College and above,"$75,000 or more",Doctor
+245,60,Female,White,College and above,"$20,000 to $74,999",Doctor
+246,51,Female,White,College and above,"$20,000 to $74,999",Internet
+247,59,Female,Others,Under College,"$20,000 to $74,999",Internet
+249,33,Female,White,College and above,"$75,000 or more",Internet
+251,28,Female,White,Under College,"$75,000 or more",Internet
+253,67,Female,White,Under College,"$75,000 or more",Internet
+254,33,Male,White,College and above,"$75,000 or more",Internet
+255,35,Female,White,College and above,"$20,000 to $74,999",Internet
+258,78,Male,White,Under College,"$20,000 to $74,999",Doctor
+261,65,Male,White,College and above,"$75,000 or more",Internet
+262,22,Male,White,Under College,"$20,000 to $74,999",Doctor
+263,50,Male,Others,Under College,"$20,000 to $74,999",Internet
+264,64,Male,White,Under College,"$75,000 or more",Internet
+265,20,Female,White,Under College,"$20,000 to $74,999",Doctor
+266,37,Male,White,Under College,"$20,000 to $74,999",Internet
+267,51,Male,White,Under College,"$20,000 to $74,999",Doctor
+268,51,Male,White,Under College,"$20,000 to $74,999",Internet
+269,39,Male,White,College and above,"$75,000 or more",Internet
+270,65,Female,White,College and above,"$75,000 or more",Internet
+273,52,Male,White,Under College,"$20,000 to $74,999",Internet
+274,34,Female,White,College and above,"$20,000 to $74,999",Internet
+275,34,Male,White,College and above,"$75,000 or more",Internet
+276,72,Female,White,Under College,"$75,000 or more",Internet
+278,76,Female,White,College and above,"$75,000 or more",Internet
+280,22,Female,White,College and above,"$20,000 to $74,999",Internet
+281,79,Female,Others,Under College,"$20,000 to $74,999",Doctor
+282,30,Male,White,College and above,"$75,000 or more",Internet
+283,52,Female,Others,Under College,"$20,000 to $74,999",Others
+285,68,Male,White,College and above,"$75,000 or more",Doctor
+286,63,Male,White,Under College,"$75,000 or more",Internet
+287,39,Female,White,College and above,"$75,000 or more",Internet
+288,70,Female,White,College and above,"$75,000 or more",Others
+289,23,Female,White,College and above,"$20,000 to $74,999",Internet
+290,55,Male,White,Under College,"$20,000 to $74,999",Internet
+292,38,Male,White,College and above,"$75,000 or more",Internet
+293,66,Female,White,Under College,"$0 to $19,999",Internet
+294,74,Female,White,College and above,"$75,000 or more",Others
+296,56,Male,White,Under College,"$20,000 to $74,999",Internet
+297,68,Male,White,Under College,"$75,000 or more",Internet
+299,60,Female,White,College and above,"$75,000 or more",Internet
+300,20,Female,White,Under College,"$20,000 to $74,999",Internet
+302,75,Male,White,College and above,"$20,000 to $74,999",Internet
+304,41,Female,White,Under College,"$75,000 or more",Internet
+307,86,Female,White,Under College,"$20,000 to $74,999",Doctor
+309,61,Male,White,Under College,"$20,000 to $74,999",Internet
+310,57,Female,White,Under College,"$20,000 to $74,999",Internet
+313,22,Female,White,College and above,"$75,000 or more",Internet
+314,37,Male,White,Under College,"$20,000 to $74,999",Internet
+315,45,Female,Others,College and above,"$75,000 or more",Internet
+317,44,Female,White,College and above,"$75,000 or more",Doctor
+318,68,Male,White,Under College,"$20,000 to $74,999",Others
+321,52,Female,Others,Under College,"$20,000 to $74,999",Doctor
+322,50,Female,White,College and above,"$75,000 or more",Internet
+324,86,Female,White,Under College,"$20,000 to $74,999",Others
+325,66,Female,White,Under College,"$75,000 or more",Internet
+326,62,Female,White,College and above,"$75,000 or more",Internet
+327,44,Female,White,College and above,"$75,000 or more",Doctor
+329,33,Female,White,College and above,"$75,000 or more",Internet
+330,63,Female,White,Under College,"$0 to $19,999",Others
+334,61,Female,White,College and above,"$20,000 to $74,999",Internet
+335,59,Male,White,College and above,"$20,000 to $74,999",Internet
+336,35,Male,White,College and above,"$20,000 to $74,999",Internet
+337,63,Female,White,College and above,"$75,000 or more",Internet
+338,29,Male,White,College and above,"$20,000 to $74,999",Internet
+340,60,Male,White,College and above,"$75,000 or more",Internet
+341,43,Female,Others,Under College,"$75,000 or more",Internet
+342,62,Female,White,College and above,"$20,000 to $74,999",Internet
+343,70,Male,White,College and above,"$75,000 or more",Internet
+344,58,Female,White,Under College,"$75,000 or more",Internet
+345,64,Male,White,Under College,"$20,000 to $74,999",Doctor
+347,69,Male,White,College and above,"$75,000 or more",Internet
+349,68,Male,White,Under College,"$20,000 to $74,999",Doctor
+351,72,Male,White,College and above,"$75,000 or more",Internet
+353,72,Female,White,College and above,"$75,000 or more",Internet
+354,53,Female,White,College and above,"$20,000 to $74,999",Internet
+356,40,Female,White,College and above,"$20,000 to $74,999",Internet
+357,65,Female,White,College and above,"$75,000 or more",Internet
+358,101,Female,White,Under College,"$0 to $19,999",Doctor
+359,48,Male,White,College and above,"$75,000 or more",Internet
+360,57,Male,Others,College and above,"$75,000 or more",Internet
+364,56,Male,White,College and above,"$75,000 or more",Internet
+367,60,Male,White,Under College,"$20,000 to $74,999",Internet
+372,59,Female,White,Under College,"$20,000 to $74,999",Doctor
+373,63,Male,White,College and above,"$20,000 to $74,999",Internet
+374,26,Female,White,College and above,"$75,000 or more",Internet
+375,64,Female,White,College and above,"$75,000 or more",Doctor
+379,66,Male,White,College and above,"$75,000 or more",Internet
+380,75,Male,White,College and above,"$75,000 or more",Internet
+381,54,Female,White,College and above,"$75,000 or more",Internet
+384,59,Male,White,Under College,"$0 to $19,999",Internet
+385,61,Female,White,Under College,"$20,000 to $74,999",Internet
+387,62,Male,White,College and above,"$75,000 or more",Internet
+390,45,Male,Others,College and above,"$75,000 or more",Internet
+393,39,Male,White,Under College,"$75,000 or more",Internet
+397,59,Female,White,Under College,"$20,000 to $74,999",Internet
+398,67,Male,White,College and above,"$75,000 or more",Internet
+399,43,Female,White,College and above,"$75,000 or more",Internet
+400,72,Male,White,Under College,"$20,000 to $74,999",Internet
+401,64,Male,White,Under College,"$75,000 or more",Internet
+402,85,Female,White,Under College,"$20,000 to $74,999",Doctor
+403,58,Male,White,College and above,"$75,000 or more",Internet
+404,66,Male,White,Under College,"$20,000 to $74,999",Internet
+405,67,Female,White,College and above,"$20,000 to $74,999",Internet
+406,53,Female,White,College and above,"$75,000 or more",Internet
+407,60,Female,White,Under College,"$75,000 or more",Internet
+409,47,Female,White,College and above,"$75,000 or more",Internet
+410,76,Male,White,College and above,"$75,000 or more",Doctor
+411,42,Male,White,College and above,"$75,000 or more",Internet
+412,93,Male,White,Under College,"$0 to $19,999",Others
+413,71,Female,White,Under College,"$20,000 to $74,999",Doctor
+414,36,Female,White,Under College,"$20,000 to $74,999",Internet
+416,36,Male,White,College and above,"$75,000 or more",Internet
+417,55,Female,White,College and above,"$75,000 or more",Doctor
+419,63,Female,White,College and above,"$75,000 or more",Doctor
+420,66,Male,White,College and above,"$20,000 to $74,999",Internet
+423,27,Male,White,College and above,"$75,000 or more",Internet
+424,38,Female,White,College and above,"$20,000 to $74,999",Internet
+430,63,Female,White,College and above,"$75,000 or more",Internet
+431,46,Female,White,College and above,"$20,000 to $74,999",Doctor
+432,61,Male,White,Under College,"$0 to $19,999",Doctor
+435,34,Female,White,College and above,"$75,000 or more",Internet
+436,45,Female,White,College and above,"$75,000 or more",Internet
+437,66,Male,White,College and above,"$20,000 to $74,999",Internet
+439,53,Female,White,Under College,"$75,000 or more",Internet
+440,33,Male,White,College and above,"$75,000 or more",Internet
+441,36,Female,White,College and above,"$20,000 to $74,999",Internet
+444,57,Male,White,College and above,"$75,000 or more",Internet
+446,57,Male,White,Under College,"$0 to $19,999",Internet
+447,52,Male,White,College and above,"$75,000 or more",Internet
+448,75,Female,White,Under College,"$0 to $19,999",Internet
+450,57,Male,White,College and above,"$20,000 to $74,999",Internet
+451,60,Female,White,Under College,"$75,000 or more",Internet
+455,51,Male,White,College and above,"$75,000 or more",Internet
+459,35,Female,White,College and above,"$75,000 or more",Others
+460,44,Female,White,College and above,"$20,000 to $74,999",Internet
+461,46,Female,White,College and above,"$75,000 or more",Internet
+462,63,Female,Others,College and above,"$20,000 to $74,999",Internet
+465,64,Female,White,College and above,"$75,000 or more",Internet
+468,77,Male,White,Under College,"$0 to $19,999",Doctor
+469,88,Female,White,College and above,"$75,000 or more",Others
+470,31,Female,White,College and above,"$20,000 to $74,999",Internet
+473,64,Female,White,College and above,"$75,000 or more",Doctor
+474,64,Male,White,Under College,"$20,000 to $74,999",Internet
+475,67,Female,White,Under College,"$0 to $19,999",Internet
+477,85,Female,Others,Under College,"$75,000 or more",Others
+478,56,Female,White,College and above,"$75,000 or more",Internet
+479,58,Male,Others,College and above,"$75,000 or more",Internet
+480,74,Male,White,College and above,"$75,000 or more",Internet
+481,83,Male,White,College and above,"$75,000 or more",Others
+482,25,Female,White,College and above,"$75,000 or more",Internet
+484,40,Female,White,College and above,"$75,000 or more",Internet
+487,87,Female,White,Under College,"$0 to $19,999",Others
+488,65,Male,White,College and above,"$20,000 to $74,999",Internet
+490,58,Male,White,College and above,"$75,000 or more",Internet
+491,80,Male,White,College and above,"$20,000 to $74,999",Internet
+492,41,Female,White,Under College,"$75,000 or more",Internet
+493,57,Female,White,College and above,"$75,000 or more",Internet
+495,77,Male,White,Under College,"$20,000 to $74,999",Doctor
+497,50,Female,White,College and above,"$75,000 or more",Internet
+500,62,Female,White,College and above,"$20,000 to $74,999",Internet
+501,49,Female,Others,College and above,"$75,000 or more",Internet
+502,55,Female,White,College and above,"$75,000 or more",Internet
+503,64,Female,White,Under College,"$20,000 to $74,999",Internet
+505,56,Male,White,Under College,"$20,000 to $74,999",Internet
+506,68,Female,White,College and above,"$75,000 or more",Internet
+507,58,Male,White,Under College,"$20,000 to $74,999",Doctor
+508,56,Male,White,Under College,"$20,000 to $74,999",Internet
+511,67,Female,White,Under College,"$20,000 to $74,999",Doctor
+512,51,Female,White,College and above,"$0 to $19,999",Internet
+513,64,Female,White,College and above,"$75,000 or more",Internet
+514,85,Female,White,Under College,"$20,000 to $74,999",Internet
+515,50,Male,White,College and above,"$75,000 or more",Internet
+516,64,Female,White,Under College,"$0 to $19,999",Doctor
+517,61,Male,White,Under College,"$75,000 or more",Internet
+518,57,Female,White,College and above,"$20,000 to $74,999",Internet
+519,58,Female,White,Under College,"$75,000 or more",Internet
+522,48,Female,White,Under College,"$0 to $19,999",Internet
+525,73,Female,White,College and above,"$20,000 to $74,999",Internet
+526,35,Male,White,College and above,"$75,000 or more",Internet
+528,37,Female,White,College and above,"$75,000 or more",Internet
+529,52,Male,White,College and above,"$75,000 or more",Internet
+530,49,Female,White,College and above,"$75,000 or more",Internet
+531,52,Male,White,Under College,"$20,000 to $74,999",Internet
+533,30,Female,Others,College and above,"$75,000 or more",Internet
+534,54,Male,White,College and above,"$75,000 or more",Internet
+535,72,Male,White,College and above,"$20,000 to $74,999",Internet
+536,62,Male,White,Under College,"$75,000 or more",Internet
+539,74,Female,White,Under College,"$20,000 to $74,999",Internet
+540,63,Female,White,Under College,"$20,000 to $74,999",Doctor
+541,38,Male,Others,College and above,"$75,000 or more",Internet
+542,37,Female,White,College and above,"$75,000 or more",Internet
+543,60,Female,White,Under College,"$75,000 or more",Internet
+544,64,Female,Others,Under College,"$20,000 to $74,999",Doctor
+546,65,Female,White,College and above,"$20,000 to $74,999",Internet
+547,48,Male,White,Under College,"$75,000 or more",Internet
+551,80,Male,White,Under College,"$75,000 or more",Others
+552,71,Female,White,Under College,"$20,000 to $74,999",Internet
+554,49,Male,White,College and above,"$75,000 or more",Internet
+555,35,Female,White,Under College,"$20,000 to $74,999",Internet
+556,53,Male,White,College and above,"$75,000 or more",Doctor
+558,49,Male,White,College and above,"$75,000 or more",Doctor
+559,75,Female,White,Under College,"$20,000 to $74,999",Doctor
+560,44,Female,White,College and above,"$20,000 to $74,999",Internet
+562,56,Female,White,Under College,"$75,000 or more",Internet
+564,74,Male,White,Under College,"$20,000 to $74,999",Internet
+566,46,Male,White,Under College,"$20,000 to $74,999",Internet
+568,58,Female,White,College and above,"$20,000 to $74,999",Others
+570,75,Female,White,Under College,"$0 to $19,999",Others
+572,59,Female,White,College and above,"$75,000 or more",Internet
+573,90,Female,White,College and above,"$75,000 or more",Doctor
+574,38,Female,White,Under College,"$20,000 to $74,999",Internet
+578,58,Female,Others,College and above,"$20,000 to $74,999",Doctor
+581,62,Male,Others,Under College,"$20,000 to $74,999",Internet
+584,75,Male,White,College and above,"$20,000 to $74,999",Internet
+585,70,Female,White,Under College,"$0 to $19,999",Doctor
+587,57,Male,White,College and above,"$75,000 or more",Internet
+588,63,Female,White,College and above,"$20,000 to $74,999",Doctor
+589,72,Female,Others,Under College,"$20,000 to $74,999",Internet
+590,57,Female,Others,College and above,"$20,000 to $74,999",Internet
+591,67,Male,White,College and above,"$75,000 or more",Internet
+592,35,Male,White,Under College,"$75,000 or more",Internet
+595,34,Male,Others,College and above,"$20,000 to $74,999",Internet
+596,46,Male,White,Under College,"$75,000 or more",Internet
+598,51,Female,White,College and above,"$0 to $19,999",Others
+599,52,Male,White,Under College,"$75,000 or more",Internet
+600,77,Male,White,College and above,"$75,000 or more",Internet
+602,78,Male,White,College and above,"$75,000 or more",Internet
+603,77,Male,White,College and above,"$75,000 or more",Others
+605,62,Female,White,College and above,"$20,000 to $74,999",Internet
+606,66,Male,Others,College and above,"$75,000 or more",Internet
+607,77,Female,White,Under College,"$0 to $19,999",Internet
+609,50,Female,White,Under College,"$20,000 to $74,999",Internet
+612,76,Male,White,Under College,"$20,000 to $74,999",Others
+615,84,Male,White,Under College,"$0 to $19,999",Doctor
+619,26,Male,White,College and above,"$20,000 to $74,999",Internet
+621,52,Female,White,College and above,"$75,000 or more",Internet
+622,68,Male,Others,College and above,"$20,000 to $74,999",Others
+623,67,Male,White,Under College,"$75,000 or more",Doctor
+624,78,Female,White,Under College,"$20,000 to $74,999",Others
+629,26,Male,Others,College and above,"$20,000 to $74,999",Internet
+634,56,Female,White,Under College,"$75,000 or more",Internet
+636,56,Male,White,Under College,"$75,000 or more",Internet
+637,67,Male,White,College and above,"$75,000 or more",Internet
+639,75,Male,White,College and above,"$75,000 or more",Internet
+641,81,Female,White,Under College,"$0 to $19,999",Doctor
+643,70,Female,White,Under College,"$20,000 to $74,999",Internet
+644,39,Male,White,Under College,"$20,000 to $74,999",Others
+645,71,Female,White,Under College,"$20,000 to $74,999",Internet
+646,73,Male,White,Under College,"$75,000 or more",Internet
+647,71,Female,White,College and above,"$20,000 to $74,999",Internet
+649,32,Female,White,College and above,"$20,000 to $74,999",Internet
+651,52,Male,White,College and above,"$75,000 or more",Internet
+652,76,Male,White,College and above,"$20,000 to $74,999",Internet
+653,74,Female,White,College and above,"$20,000 to $74,999",Doctor
+654,37,Female,White,College and above,"$75,000 or more",Internet
+655,45,Female,White,Under College,"$20,000 to $74,999",Doctor
+657,64,Female,White,College and above,"$20,000 to $74,999",Doctor
+658,74,Female,White,Under College,"$20,000 to $74,999",Internet
+660,76,Female,White,College and above,"$20,000 to $74,999",Internet
+661,67,Male,White,Under College,"$20,000 to $74,999",Internet
+662,25,Male,White,Under College,"$20,000 to $74,999",Internet
+665,48,Female,White,Under College,"$75,000 or more",Internet
+666,50,Female,White,College and above,"$20,000 to $74,999",Internet
+668,66,Male,White,College and above,"$75,000 or more",Others
+670,34,Female,White,Under College,"$20,000 to $74,999",Internet
+672,33,Female,White,College and above,"$75,000 or more",Internet
+674,66,Male,White,College and above,"$20,000 to $74,999",Internet
+675,43,Male,White,College and above,"$20,000 to $74,999",Internet
+676,55,Female,White,College and above,"$75,000 or more",Internet
+679,75,Female,White,College and above,"$75,000 or more",Internet
+681,88,Male,White,College and above,"$20,000 to $74,999",Doctor
+682,67,Female,White,College and above,"$20,000 to $74,999",Internet
+683,42,Female,White,College and above,"$75,000 or more",Internet
+684,67,Female,White,College and above,"$20,000 to $74,999",Internet
+685,40,Male,White,College and above,"$75,000 or more",Internet
+688,65,Female,White,College and above,"$0 to $19,999",Internet
+689,31,Female,White,College and above,"$20,000 to $74,999",Internet
+693,49,Male,Others,College and above,"$75,000 or more",Internet
+694,91,Male,White,College and above,"$20,000 to $74,999",Doctor
+695,74,Female,White,College and above,"$20,000 to $74,999",Doctor
+698,56,Male,White,Under College,"$75,000 or more",Internet
+699,38,Female,White,College and above,"$75,000 or more",Internet
+700,70,Male,White,Under College,"$0 to $19,999",Internet
+701,76,Female,White,College and above,"$20,000 to $74,999",Internet
+702,67,Female,White,College and above,"$20,000 to $74,999",Others
+704,77,Male,White,College and above,"$75,000 or more",Internet
+706,26,Female,White,College and above,"$20,000 to $74,999",Internet
+708,78,Female,White,College and above,"$0 to $19,999",Others
+711,33,Female,White,College and above,"$20,000 to $74,999",Internet
+712,57,Female,White,Under College,"$20,000 to $74,999",Internet
+713,63,Female,Others,Under College,"$20,000 to $74,999",Internet
+715,46,Male,White,College and above,"$75,000 or more",Internet
+717,47,Female,White,College and above,"$75,000 or more",Internet
+718,64,Female,White,Under College,"$20,000 to $74,999",Others
+720,69,Female,White,Under College,"$20,000 to $74,999",Internet
+721,90,Male,White,Under College,"$20,000 to $74,999",Others
+722,49,Male,White,College and above,"$75,000 or more",Internet
+723,51,Female,White,Under College,"$20,000 to $74,999",Others
+724,75,Female,White,Under College,"$20,000 to $74,999",Internet
+726,52,Male,White,College and above,"$75,000 or more",Internet
+727,66,Female,White,Under College,"$20,000 to $74,999",Doctor
+730,45,Female,White,College and above,"$75,000 or more",Internet
+731,55,Female,White,Under College,"$0 to $19,999",Internet
+732,63,Male,White,Under College,"$20,000 to $74,999",Others
+733,25,Female,White,College and above,"$75,000 or more",Internet
+734,75,Female,White,Under College,"$0 to $19,999",Others
+735,68,Female,White,Under College,"$20,000 to $74,999",Internet
+738,51,Female,White,College and above,"$75,000 or more",Internet
+739,44,Female,White,College and above,"$75,000 or more",Internet
+740,30,Female,White,College and above,"$0 to $19,999",Internet
+741,65,Male,White,College and above,"$75,000 or more",Internet
+742,38,Female,White,College and above,"$75,000 or more",Internet
+743,42,Female,White,College and above,"$75,000 or more",Internet
+744,61,Female,White,Under College,"$20,000 to $74,999",Internet
+745,84,Female,White,Under College,"$20,000 to $74,999",Others
+748,36,Female,Others,Under College,"$20,000 to $74,999",Doctor
+749,74,Female,White,College and above,"$75,000 or more",Internet
+750,33,Female,White,College and above,"$75,000 or more",Internet
+753,66,Female,White,College and above,"$75,000 or more",Internet
+755,60,Female,White,College and above,"$75,000 or more",Internet
+757,72,Male,White,College and above,"$75,000 or more",Internet
+758,77,Male,White,College and above,"$75,000 or more",Internet
+759,63,Male,White,College and above,"$20,000 to $74,999",Internet
+760,59,Female,White,College and above,"$75,000 or more",Internet
+762,51,Male,White,College and above,"$75,000 or more",Internet
+763,83,Female,White,Under College,"$0 to $19,999",Others
+765,33,Female,White,College and above,"$75,000 or more",Internet
+766,38,Male,White,College and above,"$75,000 or more",Internet
+767,66,Male,White,College and above,"$20,000 to $74,999",Others
+768,31,Male,White,Under College,"$75,000 or more",Internet
+769,66,Female,White,College and above,"$75,000 or more",Internet
+770,48,Female,White,Under College,"$20,000 to $74,999",Internet
+772,67,Male,White,College and above,"$20,000 to $74,999",Internet
+774,64,Male,White,Under College,"$75,000 or more",Others
+775,70,Female,White,Under College,"$0 to $19,999",Internet
+778,34,Female,White,College and above,"$75,000 or more",Internet
+782,56,Female,White,College and above,"$20,000 to $74,999",Internet
+785,76,Female,White,Under College,"$20,000 to $74,999",Internet
+786,34,Male,White,College and above,"$75,000 or more",Internet
+787,62,Female,White,Under College,"$75,000 or more",Internet
+788,49,Female,White,Under College,"$0 to $19,999",Doctor
+789,37,Male,White,College and above,"$75,000 or more",Others
+790,27,Male,White,College and above,"$75,000 or more",Internet
+791,57,Male,White,Under College,"$20,000 to $74,999",Others
+792,59,Female,White,Under College,"$20,000 to $74,999",Internet
+793,53,Male,White,College and above,"$75,000 or more",Internet
+794,27,Female,White,Under College,"$20,000 to $74,999",Internet
+795,65,Male,White,College and above,"$75,000 or more",Internet
+798,63,Female,White,College and above,"$75,000 or more",Internet
+800,52,Female,White,Under College,"$20,000 to $74,999",Doctor
+801,56,Male,White,Under College,"$20,000 to $74,999",Internet
+802,51,Male,White,Under College,"$75,000 or more",Doctor
+803,50,Male,White,College and above,"$75,000 or more",Others
+804,69,Female,White,Under College,"$75,000 or more",Internet
+808,67,Male,White,Under College,"$20,000 to $74,999",Internet
+809,56,Female,White,Under College,"$20,000 to $74,999",Internet
+810,59,Female,White,College and above,"$75,000 or more",Internet
+812,74,Male,White,College and above,"$20,000 to $74,999",Doctor
+813,57,Female,White,College and above,"$75,000 or more",Internet
+814,60,Male,White,Under College,"$75,000 or more",Internet
+815,49,Male,White,College and above,"$75,000 or more",Internet
+816,54,Female,White,College and above,"$75,000 or more",Internet
+819,62,Female,White,Under College,"$20,000 to $74,999",Internet
+821,64,Male,White,Under College,"$75,000 or more",Others
+822,58,Male,White,College and above,"$75,000 or more",Internet
+823,61,Female,White,Under College,"$75,000 or more",Internet
+824,52,Female,White,Under College,"$75,000 or more",Internet
+827,69,Male,White,Under College,"$20,000 to $74,999",Internet
+828,64,Female,White,College and above,"$75,000 or more",Internet
+831,74,Female,White,College and above,"$20,000 to $74,999",Doctor
+832,51,Female,Others,College and above,"$75,000 or more",Internet
+833,62,Female,White,College and above,"$20,000 to $74,999",Others
+835,46,Female,White,College and above,"$75,000 or more",Internet
+836,69,Male,White,College and above,"$75,000 or more",Internet
+837,33,Female,White,Under College,"$20,000 to $74,999",Internet
+840,62,Male,White,Under College,"$20,000 to $74,999",Internet
+841,60,Female,White,College and above,"$75,000 or more",Internet
+842,67,Female,White,Under College,"$20,000 to $74,999",Internet
+843,70,Male,White,College and above,"$20,000 to $74,999",Internet
+844,68,Female,White,Under College,"$20,000 to $74,999",Doctor
+845,52,Female,White,College and above,"$75,000 or more",Others
+848,68,Female,White,College and above,"$20,000 to $74,999",Internet
+849,55,Female,White,College and above,"$75,000 or more",Internet
+850,39,Male,White,College and above,"$20,000 to $74,999",Doctor
+852,66,Male,Others,Under College,"$20,000 to $74,999",Doctor
+853,37,Male,Others,College and above,"$75,000 or more",Internet
+855,59,Male,White,College and above,"$20,000 to $74,999",Internet
+856,54,Male,White,College and above,"$0 to $19,999",Internet
+861,81,Male,White,College and above,"$75,000 or more",Others
+862,64,Female,White,College and above,"$20,000 to $74,999",Internet
+863,63,Female,White,College and above,"$75,000 or more",Internet
+864,35,Male,White,College and above,"$75,000 or more",Internet
+867,39,Male,Others,College and above,"$75,000 or more",Internet
+868,70,Male,White,College and above,"$75,000 or more",Others
+869,43,Female,White,College and above,"$20,000 to $74,999",Doctor
+874,51,Male,Others,Under College,"$75,000 or more",Internet
+875,32,Female,White,Under College,"$20,000 to $74,999",Doctor
+876,58,Female,White,Under College,"$0 to $19,999",Internet
+877,78,Female,White,Under College,"$20,000 to $74,999",Internet
+878,52,Female,Others,Under College,"$0 to $19,999",Internet
+879,75,Female,White,Under College,"$20,000 to $74,999",Others
+881,64,Male,White,College and above,"$20,000 to $74,999",Others
+882,64,Female,White,Under College,"$75,000 or more",Internet
+883,79,Female,White,College and above,"$20,000 to $74,999",Internet
+885,63,Male,White,College and above,"$75,000 or more",Internet
+889,62,Female,White,College and above,"$20,000 to $74,999",Internet
+892,66,Male,White,College and above,"$20,000 to $74,999",Internet
+896,78,Female,White,College and above,"$0 to $19,999",Doctor
+897,54,Female,White,Under College,"$75,000 or more",Internet
+899,60,Female,White,Under College,"$0 to $19,999",Internet
+900,78,Male,White,Under College,"$20,000 to $74,999",Internet
+901,58,Female,White,College and above,"$20,000 to $74,999",Internet
+903,65,Female,White,Under College,"$20,000 to $74,999",Others
+904,62,Female,White,Under College,"$20,000 to $74,999",Internet
+905,43,Female,White,Under College,"$20,000 to $74,999",Doctor
+906,80,Male,White,Under College,"$75,000 or more",Internet
+909,34,Female,White,College and above,"$20,000 to $74,999",Internet
+910,58,Female,White,College and above,"$75,000 or more",Doctor
+911,72,Female,White,Under College,"$0 to $19,999",Doctor
+912,69,Male,White,Under College,"$20,000 to $74,999",Doctor
+913,79,Male,White,Under College,"$20,000 to $74,999",Doctor
+915,74,Male,White,Under College,"$20,000 to $74,999",Internet
+916,29,Male,White,College and above,"$20,000 to $74,999",Internet
+919,35,Female,White,College and above,"$20,000 to $74,999",Internet
+920,48,Female,White,College and above,"$20,000 to $74,999",Internet
+922,48,Female,White,College and above,"$20,000 to $74,999",Internet
+923,75,Male,White,Under College,"$20,000 to $74,999",Internet
+924,51,Male,White,Under College,"$75,000 or more",Internet
+925,25,Female,White,College and above,"$20,000 to $74,999",Internet
+926,29,Female,Others,Under College,"$0 to $19,999",Internet
+928,62,Female,Others,College and above,"$20,000 to $74,999",Internet
+930,77,Male,White,College and above,"$75,000 or more",Internet
+932,77,Male,White,College and above,"$75,000 or more",Doctor
+933,53,Female,White,College and above,"$75,000 or more",Doctor
+934,32,Female,White,College and above,"$75,000 or more",Others
+935,33,Male,White,Under College,"$20,000 to $74,999",Internet
+937,61,Male,White,College and above,"$0 to $19,999",Internet
+938,63,Male,White,College and above,"$75,000 or more",Internet
+939,55,Male,White,College and above,"$75,000 or more",Internet
+940,65,Male,White,College and above,"$75,000 or more",Internet
+942,48,Female,White,College and above,"$20,000 to $74,999",Internet
+943,61,Male,White,College and above,"$20,000 to $74,999",Doctor
+945,42,Female,White,College and above,"$20,000 to $74,999",Internet
+946,61,Female,White,College and above,"$20,000 to $74,999",Internet
+947,55,Female,White,Under College,"$20,000 to $74,999",Doctor
+948,44,Male,White,College and above,"$75,000 or more",Internet
+949,66,Male,White,Under College,"$20,000 to $74,999",Internet
+950,44,Female,White,College and above,"$75,000 or more",Internet
+951,57,Male,White,Under College,"$75,000 or more",Internet
+954,66,Female,White,Under College,"$20,000 to $74,999",Doctor
+956,51,Female,Others,Under College,"$0 to $19,999",Others
+957,61,Female,White,College and above,"$20,000 to $74,999",Internet
+958,62,Male,White,College and above,"$0 to $19,999",Doctor
+959,50,Male,White,Under College,"$75,000 or more",Internet
+961,67,Male,White,Under College,"$75,000 or more",Internet
+969,64,Female,White,Under College,"$0 to $19,999",Doctor
+970,101,Female,Others,Under College,"$0 to $19,999",Others
+972,64,Male,White,Under College,"$20,000 to $74,999",Doctor
+973,66,Female,White,Under College,"$20,000 to $74,999",Internet
+974,60,Female,White,Under College,"$0 to $19,999",Internet
+975,64,Female,White,College and above,"$20,000 to $74,999",Doctor
+976,44,Female,Others,College and above,"$20,000 to $74,999",Internet
+977,69,Female,White,Under College,"$20,000 to $74,999",Doctor
+980,65,Male,White,Under College,"$20,000 to $74,999",Internet
+981,48,Male,White,College and above,"$75,000 or more",Internet
+982,57,Male,White,Under College,"$20,000 to $74,999",Internet
+985,69,Female,White,College and above,"$75,000 or more",Others
+986,68,Male,White,College and above,"$75,000 or more",Internet
+987,27,Female,White,College and above,"$75,000 or more",Internet
+988,60,Female,White,College and above,"$75,000 or more",Internet
+991,50,Male,Others,Under College,"$0 to $19,999",Internet
+992,63,Male,White,Under College,"$0 to $19,999",Others
+993,45,Male,White,College and above,"$75,000 or more",Internet
+994,71,Female,White,Under College,"$0 to $19,999",Doctor
+995,30,Female,White,College and above,"$20,000 to $74,999",Internet
+997,56,Female,White,College and above,"$75,000 or more",Internet
+998,54,Male,White,Under College,"$20,000 to $74,999",Internet
+999,47,Female,White,College and above,"$75,000 or more",Internet
+1001,60,Male,White,Under College,"$75,000 or more",Internet
+1002,51,Female,Others,College and above,"$20,000 to $74,999",Internet
+1003,46,Female,White,Under College,"$75,000 or more",Internet
+1004,69,Male,Others,College and above,"$75,000 or more",Internet
+1006,57,Female,White,Under College,"$20,000 to $74,999",Internet
+1007,34,Female,White,College and above,"$75,000 or more",Internet
+1009,36,Female,White,College and above,"$75,000 or more",Internet
+1010,50,Male,White,Under College,"$20,000 to $74,999",Internet
+1013,46,Female,White,College and above,"$20,000 to $74,999",Others
+1016,44,Female,White,College and above,"$75,000 or more",Internet
+1018,48,Female,White,Under College,"$20,000 to $74,999",Internet
+1019,53,Male,White,College and above,"$75,000 or more",Internet
+1021,39,Female,White,College and above,"$75,000 or more",Internet
+1023,46,Female,White,College and above,"$75,000 or more",Internet
+1025,24,Male,White,College and above,"$20,000 to $74,999",Internet
+1027,57,Female,White,College and above,"$75,000 or more",Internet
+1032,74,Male,White,Under College,"$0 to $19,999",Internet
+1034,51,Female,White,Under College,"$75,000 or more",Internet
+1035,80,Female,White,Under College,"$20,000 to $74,999",Others
+1036,63,Female,White,College and above,"$20,000 to $74,999",Internet
+1037,36,Male,White,Under College,"$20,000 to $74,999",Internet
+1038,37,Male,White,Under College,"$20,000 to $74,999",Others
+1042,46,Female,White,College and above,"$20,000 to $74,999",Internet
+1043,80,Male,White,Under College,"$20,000 to $74,999",Internet
+1044,48,Female,White,Under College,"$20,000 to $74,999",Doctor
+1045,28,Female,White,College and above,"$75,000 or more",Internet
+1046,37,Male,White,Under College,"$20,000 to $74,999",Internet
+1048,31,Female,White,College and above,"$75,000 or more",Internet
+1049,64,Female,White,College and above,"$75,000 or more",Internet
+1050,30,Female,White,College and above,"$20,000 to $74,999",Internet
+1051,61,Female,White,Under College,"$75,000 or more",Internet
+1055,48,Female,White,Under College,"$20,000 to $74,999",Internet
+1057,58,Female,White,College and above,"$20,000 to $74,999",Internet
+1058,35,Male,White,College and above,"$75,000 or more",Internet
+1059,54,Male,White,College and above,"$75,000 or more",Internet
+1060,62,Female,White,College and above,"$20,000 to $74,999",Others
+1061,30,Male,White,Under College,"$0 to $19,999",Internet
+1062,31,Female,White,College and above,"$75,000 or more",Internet
+1063,70,Female,White,Under College,"$20,000 to $74,999",Doctor
+1065,61,Female,White,Under College,"$20,000 to $74,999",Internet
+1068,63,Male,Others,College and above,"$20,000 to $74,999",Others
+1069,60,Male,White,Under College,"$20,000 to $74,999",Internet
+1070,28,Female,White,College and above,"$75,000 or more",Internet
+1073,36,Male,White,Under College,"$75,000 or more",Internet
+1075,64,Male,White,Under College,"$20,000 to $74,999",Internet
+1076,46,Female,White,College and above,"$75,000 or more",Internet
+1079,32,Male,White,College and above,"$20,000 to $74,999",Internet
+1080,34,Male,White,Under College,"$20,000 to $74,999",Internet
+1081,47,Female,White,College and above,"$20,000 to $74,999",Internet
+1082,56,Male,White,Under College,"$20,000 to $74,999",Internet
+1088,47,Female,White,College and above,"$75,000 or more",Internet
+1089,59,Male,White,College and above,"$20,000 to $74,999",Internet
+1093,51,Female,White,College and above,"$75,000 or more",Internet
+1094,25,Female,White,College and above,"$20,000 to $74,999",Internet
+1095,24,Female,White,College and above,"$20,000 to $74,999",Internet
+1096,60,Male,White,Under College,"$20,000 to $74,999",Others
+1097,77,Female,White,Under College,"$20,000 to $74,999",Internet
+1099,63,Female,White,College and above,"$20,000 to $74,999",Doctor
+1100,65,Female,Others,College and above,"$0 to $19,999",Others
+1101,55,Male,White,Under College,"$20,000 to $74,999",Internet
+1103,59,Female,White,Under College,"$0 to $19,999",Doctor
+1105,63,Male,White,Under College,"$20,000 to $74,999",Internet
+1106,65,Female,White,Under College,"$0 to $19,999",Others
+1107,68,Male,White,Under College,"$20,000 to $74,999",Others
+1110,98,Male,White,College and above,"$20,000 to $74,999",Internet
+1112,66,Female,White,Under College,"$20,000 to $74,999",Internet
+1113,66,Female,White,Under College,"$20,000 to $74,999",Others
+1114,67,Male,Others,College and above,"$75,000 or more",Internet
+1116,57,Male,White,Under College,"$75,000 or more",Internet
+1121,56,Male,White,Under College,"$20,000 to $74,999",Doctor
+1124,61,Female,White,College and above,"$75,000 or more",Internet
+1125,63,Female,White,College and above,"$0 to $19,999",Internet
+1126,74,Female,White,Under College,"$20,000 to $74,999",Internet
+1127,40,Male,White,College and above,"$20,000 to $74,999",Internet
+1130,61,Male,Others,Under College,"$75,000 or more",Internet
+1132,54,Female,Others,Under College,"$20,000 to $74,999",Internet
+1134,70,Male,White,Under College,"$20,000 to $74,999",Internet
+1137,63,Female,White,Under College,"$20,000 to $74,999",Internet
+1139,61,Male,White,Under College,"$20,000 to $74,999",Internet
+1142,51,Male,White,Under College,"$20,000 to $74,999",Internet
+1143,41,Female,White,Under College,"$75,000 or more",Internet
+1145,71,Female,White,Under College,"$0 to $19,999",Doctor
+1150,89,Female,White,Under College,"$0 to $19,999",Doctor
+1152,86,Female,White,Under College,"$0 to $19,999",Others
+1156,56,Female,White,Under College,"$75,000 or more",Internet
+1157,65,Male,White,College and above,"$20,000 to $74,999",Internet
+1158,80,Male,White,College and above,"$75,000 or more",Doctor
+1161,21,Male,White,College and above,"$0 to $19,999",Internet
+1163,60,Female,White,Under College,"$75,000 or more",Internet
+1165,62,Female,White,College and above,"$75,000 or more",Internet
+1167,50,Male,White,College and above,"$75,000 or more",Internet
+1168,60,Female,White,Under College,"$75,000 or more",Doctor
+1169,28,Female,Others,College and above,"$20,000 to $74,999",Internet
+1178,36,Female,Others,College and above,"$75,000 or more",Internet
+1179,74,Female,White,Under College,"$0 to $19,999",Internet
+1181,56,Female,White,Under College,"$75,000 or more",Internet
+1182,27,Female,White,Under College,"$0 to $19,999",Internet
+1183,36,Male,Others,College and above,"$75,000 or more",Internet
+1184,72,Male,White,Under College,"$20,000 to $74,999",Doctor
+1185,55,Male,White,College and above,"$75,000 or more",Internet
+1186,39,Male,White,Under College,"$20,000 to $74,999",Internet
+1187,53,Female,White,College and above,"$75,000 or more",Internet
+1189,60,Female,White,College and above,"$20,000 to $74,999",Internet
+1192,75,Female,White,College and above,"$20,000 to $74,999",Internet
+1193,65,Male,White,Under College,"$0 to $19,999",Others
+1196,75,Female,White,College and above,"$20,000 to $74,999",Internet
+1197,36,Female,White,Under College,"$20,000 to $74,999",Internet
+1198,35,Male,White,College and above,"$20,000 to $74,999",Internet
+1199,27,Female,White,College and above,"$20,000 to $74,999",Internet
+1200,67,Male,White,College and above,"$20,000 to $74,999",Internet
+1201,45,Female,White,College and above,"$75,000 or more",Internet
+1203,55,Female,White,College and above,"$75,000 or more",Internet
+1204,35,Female,White,Under College,"$0 to $19,999",Others
+1205,70,Male,White,Under College,"$20,000 to $74,999",Internet
+1206,38,Female,White,College and above,"$75,000 or more",Internet
+1209,36,Female,White,College and above,"$20,000 to $74,999",Others
+1211,71,Female,White,Under College,"$20,000 to $74,999",Internet
+1212,76,Male,White,College and above,"$20,000 to $74,999",Others
+1213,65,Female,White,College and above,"$75,000 or more",Internet
+1214,36,Female,White,Under College,"$0 to $19,999",Internet
+1222,67,Female,White,Under College,"$75,000 or more",Internet
+1223,72,Female,White,College and above,"$75,000 or more",Others
+1225,64,Male,White,Under College,"$20,000 to $74,999",Internet
+1227,51,Male,White,College and above,"$75,000 or more",Internet
+1230,54,Female,White,College and above,"$75,000 or more",Internet
+1232,65,Female,White,College and above,"$75,000 or more",Internet
+1233,28,Female,White,College and above,"$75,000 or more",Doctor
+1234,69,Female,White,Under College,"$0 to $19,999",Others
+1236,42,Male,White,College and above,"$75,000 or more",Internet
+1237,87,Male,White,College and above,"$75,000 or more",Internet
+1238,32,Female,White,Under College,"$75,000 or more",Internet
+1239,66,Female,White,Under College,"$20,000 to $74,999",Internet
+1241,54,Male,Others,College and above,"$20,000 to $74,999",Internet
+1242,67,Male,White,College and above,"$75,000 or more",Doctor
+1245,65,Male,White,College and above,"$0 to $19,999",Others
+1247,65,Male,White,Under College,"$75,000 or more",Doctor
+1249,54,Female,White,Under College,"$20,000 to $74,999",Internet
+1250,59,Male,White,Under College,"$20,000 to $74,999",Internet
+1251,68,Male,White,College and above,"$20,000 to $74,999",Doctor
+1254,56,Male,White,Under College,"$20,000 to $74,999",Internet
+1255,54,Male,White,College and above,"$75,000 or more",Others
+1256,70,Female,White,College and above,"$20,000 to $74,999",Internet
+1257,32,Female,White,College and above,"$20,000 to $74,999",Internet
+1258,62,Female,White,Under College,"$20,000 to $74,999",Internet
+1259,33,Female,White,Under College,"$20,000 to $74,999",Internet
+1260,41,Male,White,College and above,"$75,000 or more",Internet
+1261,43,Male,White,College and above,"$75,000 or more",Internet
+1262,56,Male,White,Under College,"$75,000 or more",Internet
+1265,43,Male,White,College and above,"$75,000 or more",Internet
+1266,46,Female,White,Under College,"$0 to $19,999",Internet
+1267,64,Female,White,Under College,"$75,000 or more",Internet
+1268,63,Female,White,College and above,"$20,000 to $74,999",Internet
+1269,74,Female,White,College and above,"$0 to $19,999",Others
+1270,74,Female,White,College and above,"$20,000 to $74,999",Internet
+1271,25,Female,White,Under College,"$20,000 to $74,999",Others
+1273,50,Female,White,College and above,"$20,000 to $74,999",Internet
+1274,53,Male,White,Under College,"$75,000 or more",Others
+1275,69,Male,White,College and above,"$20,000 to $74,999",Internet
+1279,75,Female,White,Under College,"$0 to $19,999",Internet
+1280,33,Female,White,College and above,"$75,000 or more",Internet
+1283,59,Female,White,College and above,"$75,000 or more",Internet
+1284,32,Female,Others,College and above,"$75,000 or more",Internet
+1285,75,Male,White,College and above,"$75,000 or more",Internet
+1287,58,Male,White,Under College,"$20,000 to $74,999",Internet
+1288,61,Female,White,Under College,"$20,000 to $74,999",Internet
+1292,71,Male,White,Under College,"$20,000 to $74,999",Others
+1295,46,Female,White,College and above,"$75,000 or more",Internet
+1296,58,Male,White,Under College,"$20,000 to $74,999",Internet
+1298,67,Male,White,Under College,"$20,000 to $74,999",Doctor
+1299,54,Male,White,College and above,"$20,000 to $74,999",Internet
+1302,39,Male,White,College and above,"$20,000 to $74,999",Internet
+1304,59,Female,White,College and above,"$75,000 or more",Doctor
+1305,46,Female,White,College and above,"$75,000 or more",Internet
+1306,62,Female,White,Under College,"$20,000 to $74,999",Internet
+1308,56,Male,Others,College and above,"$20,000 to $74,999",Others
+1310,36,Female,White,Under College,"$20,000 to $74,999",Internet
+1311,31,Male,White,College and above,"$20,000 to $74,999",Internet
+1312,71,Male,Others,College and above,"$0 to $19,999",Others
+1314,39,Male,White,College and above,"$75,000 or more",Internet
+1315,68,Female,White,Under College,"$75,000 or more",Internet
+1316,36,Female,White,Under College,"$75,000 or more",Internet
+1317,69,Female,White,College and above,"$75,000 or more",Internet
+1318,30,Female,Others,College and above,"$20,000 to $74,999",Internet
+1319,34,Male,White,College and above,"$75,000 or more",Internet
+1321,34,Female,White,College and above,"$75,000 or more",Internet
+1323,28,Male,White,College and above,"$75,000 or more",Internet
+1328,41,Female,White,College and above,"$75,000 or more",Internet
+1329,59,Male,Others,College and above,"$75,000 or more",Internet
+1331,47,Female,White,College and above,"$75,000 or more",Internet
+1334,44,Male,White,College and above,"$75,000 or more",Internet
+1335,43,Female,White,College and above,"$75,000 or more",Internet
+1338,61,Female,White,Under College,"$75,000 or more",Internet
+1339,53,Male,White,Under College,"$20,000 to $74,999",Internet
+1341,39,Female,White,College and above,"$75,000 or more",Internet
+1342,44,Female,White,College and above,"$75,000 or more",Internet
+1344,65,Female,White,College and above,"$20,000 to $74,999",Internet
+1345,60,Female,White,Under College,"$0 to $19,999",Doctor
+1346,44,Female,White,Under College,"$75,000 or more",Internet
+1348,56,Female,White,Under College,"$75,000 or more",Internet
+1349,86,Female,White,College and above,"$20,000 to $74,999",Doctor
+1352,77,Female,White,Under College,"$0 to $19,999",Others
+1353,46,Male,White,College and above,"$75,000 or more",Internet
+1354,54,Female,White,College and above,"$75,000 or more",Internet
+1355,38,Female,White,Under College,"$75,000 or more",Internet
+1358,85,Female,Others,College and above,"$20,000 to $74,999",Internet
+1359,50,Female,Others,College and above,"$75,000 or more",Internet
+1362,68,Male,White,Under College,"$75,000 or more",Internet
+1364,66,Male,White,College and above,"$75,000 or more",Others
+1365,59,Male,White,College and above,"$20,000 to $74,999",Internet
+1366,40,Female,White,College and above,"$75,000 or more",Internet
+1367,63,Male,White,College and above,"$75,000 or more",Internet
+1369,27,Female,White,Under College,"$20,000 to $74,999",Internet
+1371,41,Male,Others,College and above,"$75,000 or more",Internet
+1372,45,Female,White,Under College,"$75,000 or more",Internet
+1373,22,Female,White,College and above,"$0 to $19,999",Doctor
+1374,38,Female,White,College and above,"$75,000 or more",Others
+1375,40,Male,White,College and above,"$75,000 or more",Internet
+1377,32,Female,White,College and above,"$20,000 to $74,999",Internet
+1378,87,Male,White,College and above,"$75,000 or more",Others
+1379,56,Female,White,College and above,"$0 to $19,999",Internet
+1380,66,Female,White,College and above,"$75,000 or more",Internet
+1381,52,Male,White,College and above,"$75,000 or more",Internet
+1382,58,Female,White,Under College,"$75,000 or more",Internet
+1383,25,Male,White,College and above,"$75,000 or more",Internet
+1384,46,Female,White,College and above,"$20,000 to $74,999",Internet
+1385,61,Female,Others,College and above,"$75,000 or more",Others
+1386,73,Female,White,College and above,"$75,000 or more",Others
+1387,61,Female,White,Under College,"$75,000 or more",Internet
+1388,68,Male,White,College and above,"$20,000 to $74,999",Internet
+1390,71,Male,White,Under College,"$75,000 or more",Others
+1391,55,Female,White,Under College,"$75,000 or more",Internet
+1392,65,Female,White,Under College,"$20,000 to $74,999",Internet
+1393,62,Female,White,Under College,"$75,000 or more",Internet
+1395,37,Female,White,College and above,"$75,000 or more",Internet
+1397,32,Female,White,College and above,"$75,000 or more",Internet
+1403,28,Female,White,College and above,"$20,000 to $74,999",Internet
+1405,43,Female,White,College and above,"$20,000 to $74,999",Doctor
+1408,73,Female,White,Under College,"$0 to $19,999",Internet
+1409,73,Female,White,College and above,"$0 to $19,999",Internet
+1411,48,Male,White,College and above,"$75,000 or more",Internet
+1413,77,Female,White,Under College,"$20,000 to $74,999",Internet
+1414,68,Female,White,College and above,"$75,000 or more",Internet
+1415,45,Female,White,College and above,"$75,000 or more",Internet
+1417,59,Male,White,Under College,"$75,000 or more",Doctor
+1418,80,Male,White,Under College,"$20,000 to $74,999",Internet
+1420,55,Female,Others,Under College,"$20,000 to $74,999",Internet
+1421,79,Male,White,Under College,"$20,000 to $74,999",Doctor
+1423,82,Male,White,College and above,"$20,000 to $74,999",Others
+1424,67,Female,White,College and above,"$20,000 to $74,999",Doctor
+1425,52,Male,White,College and above,"$75,000 or more",Internet
+1426,52,Male,White,Under College,"$75,000 or more",Internet
+1430,58,Male,White,College and above,"$75,000 or more",Internet
+1432,57,Male,White,College and above,"$75,000 or more",Internet
+1433,56,Male,White,Under College,"$75,000 or more",Internet
+1435,54,Male,White,College and above,"$20,000 to $74,999",Internet
+1436,44,Male,White,Under College,"$75,000 or more",Internet
+1437,28,Female,Others,College and above,"$75,000 or more",Internet
+1444,71,Male,White,Under College,"$20,000 to $74,999",Internet
+1447,54,Female,White,Under College,"$20,000 to $74,999",Internet
+1448,59,Male,White,College and above,"$20,000 to $74,999",Internet
+1449,50,Male,White,College and above,"$75,000 or more",Internet
+1450,67,Female,Others,Under College,"$0 to $19,999",Others
+1451,35,Male,White,College and above,"$75,000 or more",Internet
+1453,40,Male,White,College and above,"$75,000 or more",Internet
+1454,77,Male,White,Under College,"$0 to $19,999",Others
+1455,24,Female,Others,College and above,"$75,000 or more",Internet
+1456,34,Female,White,College and above,"$75,000 or more",Internet
+1458,58,Male,White,College and above,"$75,000 or more",Internet
+1460,64,Female,White,College and above,"$75,000 or more",Internet
+1461,53,Female,White,College and above,"$20,000 to $74,999",Internet
+1465,51,Female,White,College and above,"$75,000 or more",Internet
+1466,82,Male,Others,Under College,"$75,000 or more",Doctor
+1470,49,Male,Others,College and above,"$75,000 or more",Internet
+1473,36,Female,White,College and above,"$75,000 or more",Internet
+1474,26,Female,White,College and above,"$20,000 to $74,999",Internet
+1475,46,Female,White,Under College,"$20,000 to $74,999",Internet
+1476,68,Female,White,College and above,"$20,000 to $74,999",Doctor
+1477,56,Female,White,College and above,"$75,000 or more",Internet
+1478,61,Male,White,Under College,"$75,000 or more",Doctor
+1479,68,Female,White,College and above,"$75,000 or more",Internet
+1480,60,Female,Others,College and above,"$20,000 to $74,999",Internet
+1481,51,Female,White,College and above,"$75,000 or more",Internet
+1483,58,Male,White,College and above,"$75,000 or more",Internet
+1487,85,Male,White,College and above,"$20,000 to $74,999",Internet
+1488,32,Female,White,College and above,"$20,000 to $74,999",Internet
+1490,60,Male,White,College and above,"$75,000 or more",Internet
+1491,70,Female,White,College and above,"$75,000 or more",Internet
+1492,71,Male,White,Under College,"$0 to $19,999",Internet
+1493,88,Male,White,Under College,"$75,000 or more",Internet
+1498,42,Female,White,College and above,"$20,000 to $74,999",Internet
+1500,67,Male,White,Under College,"$75,000 or more",Internet
+1501,82,Female,White,Under College,"$75,000 or more",Internet
+1504,42,Female,White,Under College,"$20,000 to $74,999",Others
+1506,53,Female,White,Under College,"$75,000 or more",Internet
+1508,63,Female,White,Under College,"$20,000 to $74,999",Internet
+1509,57,Male,Others,College and above,"$75,000 or more",Internet
+1510,47,Male,White,Under College,"$75,000 or more",Doctor
+1512,59,Female,White,College and above,"$75,000 or more",Internet
+1516,36,Male,Others,College and above,"$75,000 or more",Internet
+1518,64,Female,Others,College and above,"$20,000 to $74,999",Internet
+1521,70,Female,White,Under College,"$20,000 to $74,999",Doctor
+1523,58,Female,Others,Under College,"$20,000 to $74,999",Internet
+1524,31,Male,White,College and above,"$20,000 to $74,999",Internet
+1526,80,Female,White,Under College,"$20,000 to $74,999",Doctor
+1527,84,Male,White,Under College,"$20,000 to $74,999",Others
+1528,40,Female,Others,College and above,"$0 to $19,999",Internet
+1529,48,Male,White,College and above,"$75,000 or more",Internet
+1532,31,Female,White,College and above,"$75,000 or more",Internet
+1533,27,Male,White,College and above,"$75,000 or more",Internet
+1534,45,Female,White,College and above,"$20,000 to $74,999",Internet
+1536,66,Male,White,Under College,"$75,000 or more",Internet
+1537,31,Female,White,College and above,"$20,000 to $74,999",Internet
+1538,81,Male,Others,Under College,"$20,000 to $74,999",Others
+1540,33,Female,White,Under College,"$20,000 to $74,999",Internet
+1542,47,Female,Others,College and above,"$75,000 or more",Internet
+1544,65,Female,White,College and above,"$75,000 or more",Internet
+1548,31,Male,White,College and above,"$20,000 to $74,999",Internet
+1550,65,Male,White,Under College,"$75,000 or more",Doctor
+1552,57,Male,White,Under College,"$75,000 or more",Doctor
+1554,75,Female,White,Under College,"$20,000 to $74,999",Doctor
+1555,95,Male,White,Under College,"$20,000 to $74,999",Doctor
+1557,52,Female,White,College and above,"$20,000 to $74,999",Internet
+1558,43,Male,White,College and above,"$75,000 or more",Internet
+1559,73,Male,White,Under College,"$75,000 or more",Doctor
+1560,74,Male,White,College and above,"$75,000 or more",Internet
+1563,76,Male,Others,College and above,"$20,000 to $74,999",Internet
+1564,42,Male,White,Under College,"$20,000 to $74,999",Internet
+1565,68,Male,White,Under College,"$75,000 or more",Doctor
+1566,82,Female,Others,Under College,"$20,000 to $74,999",Others
+1575,41,Female,Others,Under College,"$20,000 to $74,999",Others
+1576,69,Male,Others,Under College,"$20,000 to $74,999",Others
+1577,53,Male,White,College and above,"$75,000 or more",Internet
+1579,71,Male,White,College and above,"$20,000 to $74,999",Others
+1581,53,Female,White,Under College,"$75,000 or more",Internet
+1584,25,Female,Others,College and above,"$20,000 to $74,999",Internet
+1586,24,Male,White,Under College,"$20,000 to $74,999",Internet
+1589,68,Male,White,Under College,"$20,000 to $74,999",Internet
+1590,74,Female,White,Under College,"$20,000 to $74,999",Doctor
+1591,80,Female,White,Under College,"$20,000 to $74,999",Doctor
+1592,27,Female,White,College and above,"$20,000 to $74,999",Internet
+1597,69,Male,White,College and above,"$75,000 or more",Internet
+1599,39,Male,Others,College and above,"$75,000 or more",Internet
+1600,49,Male,Others,College and above,"$20,000 to $74,999",Internet
+1603,29,Male,Others,Under College,"$75,000 or more",Internet
+1605,59,Male,Others,Under College,"$20,000 to $74,999",Internet
+1606,59,Male,White,Under College,"$75,000 or more",Internet
+1607,92,Female,White,Under College,"$0 to $19,999",Doctor
+1611,71,Female,White,College and above,"$75,000 or more",Internet
+1613,56,Male,White,College and above,"$20,000 to $74,999",Internet
+1614,31,Female,Others,Under College,"$20,000 to $74,999",Internet
+1615,69,Female,White,Under College,"$0 to $19,999",Others
+1616,32,Female,White,College and above,"$20,000 to $74,999",Internet
+1618,90,Female,Others,Under College,"$0 to $19,999",Doctor
+1623,35,Female,White,College and above,"$75,000 or more",Doctor
+1626,66,Female,Others,Under College,"$0 to $19,999",Internet
+1627,58,Female,White,College and above,"$75,000 or more",Internet
+1632,53,Male,White,Under College,"$75,000 or more",Internet
+1634,59,Female,Others,Under College,"$20,000 to $74,999",Internet
+1635,56,Female,Others,College and above,"$20,000 to $74,999",Others
+1639,28,Female,White,College and above,"$20,000 to $74,999",Internet
+1642,41,Female,White,College and above,"$75,000 or more",Internet
+1644,29,Female,Others,College and above,"$75,000 or more",Doctor
+1645,73,Male,White,College and above,"$75,000 or more",Doctor
+1649,68,Female,White,Under College,"$20,000 to $74,999",Internet
+1654,35,Female,Others,College and above,"$20,000 to $74,999",Internet
+1655,52,Male,White,College and above,"$0 to $19,999",Internet
+1656,51,Male,Others,Under College,"$0 to $19,999",Others
+1657,68,Female,White,Under College,"$20,000 to $74,999",Internet
+1660,71,Male,White,Under College,"$75,000 or more",Internet
+1661,41,Female,Others,College and above,"$20,000 to $74,999",Internet
+1662,64,Female,Others,Under College,"$0 to $19,999",Others
+1663,30,Female,White,College and above,"$20,000 to $74,999",Internet
+1664,91,Male,White,Under College,"$20,000 to $74,999",Doctor
+1666,29,Female,White,College and above,"$75,000 or more",Internet
+1668,70,Female,Others,Under College,"$20,000 to $74,999",Doctor
+1670,67,Female,White,Under College,"$20,000 to $74,999",Internet
+1671,65,Male,Others,College and above,"$0 to $19,999",Internet
+1673,20,Female,White,Under College,"$75,000 or more",Others
+1675,57,Male,White,Under College,"$75,000 or more",Doctor
+1676,58,Male,White,College and above,"$75,000 or more",Internet
+1677,43,Male,Others,Under College,"$20,000 to $74,999",Internet
+1678,65,Male,White,Under College,"$75,000 or more",Others
+1679,31,Female,White,College and above,"$20,000 to $74,999",Internet
+1680,33,Male,Others,Under College,"$0 to $19,999",Doctor
+1681,67,Male,White,Under College,"$75,000 or more",Internet
+1684,42,Female,Others,Under College,"$20,000 to $74,999",Internet
+1685,50,Female,White,Under College,"$75,000 or more",Internet
+1686,77,Female,Others,Under College,"$20,000 to $74,999",Internet
+1687,62,Female,Others,Under College,"$0 to $19,999",Internet
+1688,28,Male,White,College and above,"$75,000 or more",Internet
+1689,61,Male,White,College and above,"$20,000 to $74,999",Internet
+1690,69,Female,White,College and above,"$75,000 or more",Doctor
+1691,64,Female,White,Under College,"$20,000 to $74,999",Internet
+1692,76,Female,White,Under College,"$20,000 to $74,999",Doctor
+1695,43,Male,White,College and above,"$20,000 to $74,999",Internet
+1697,79,Female,White,Under College,"$20,000 to $74,999",Internet
+1698,59,Female,White,College and above,"$75,000 or more",Internet
+1699,87,Female,White,Under College,"$20,000 to $74,999",Others
+1702,59,Female,Others,College and above,"$75,000 or more",Internet
+1703,52,Male,White,College and above,"$75,000 or more",Internet
+1704,73,Female,White,College and above,"$0 to $19,999",Internet
+1706,72,Male,White,Under College,"$0 to $19,999",Doctor
+1707,23,Male,White,College and above,"$75,000 or more",Internet
+1708,65,Male,White,College and above,"$75,000 or more",Internet
+1709,56,Male,Others,Under College,"$0 to $19,999",Doctor
+1710,53,Female,Others,Under College,"$75,000 or more",Internet
+1711,75,Male,White,Under College,"$20,000 to $74,999",Internet
+1713,89,Female,White,Under College,"$20,000 to $74,999",Others
+1717,69,Female,White,Under College,"$20,000 to $74,999",Doctor
+1719,64,Female,Others,Under College,"$20,000 to $74,999",Internet
+1722,55,Male,Others,Under College,"$20,000 to $74,999",Doctor
+1724,39,Male,White,Under College,"$0 to $19,999",Internet
+1726,48,Female,Others,College and above,"$20,000 to $74,999",Internet
+1728,47,Male,Others,College and above,"$0 to $19,999",Internet
+1730,34,Female,Others,Under College,"$0 to $19,999",Internet
+1733,69,Female,White,Under College,"$20,000 to $74,999",Internet
+1734,70,Female,White,College and above,"$20,000 to $74,999",Internet
+1735,50,Female,Others,College and above,"$20,000 to $74,999",Internet
+1737,63,Male,White,Under College,"$20,000 to $74,999",Internet
+1738,63,Female,White,College and above,"$75,000 or more",Others
+1740,67,Male,White,Under College,"$20,000 to $74,999",Doctor
+1741,69,Female,Others,College and above,"$20,000 to $74,999",Doctor
+1743,45,Female,Others,College and above,"$20,000 to $74,999",Internet
+1744,32,Female,White,College and above,"$75,000 or more",Internet
+1745,39,Female,White,College and above,"$75,000 or more",Internet
+1746,36,Female,Others,College and above,"$75,000 or more",Internet
+1748,66,Male,White,Under College,"$20,000 to $74,999",Internet
+1752,47,Male,Others,Under College,"$0 to $19,999",Doctor
+1753,44,Female,Others,College and above,"$75,000 or more",Internet
+1754,62,Male,Others,Under College,"$0 to $19,999",Others
+1757,60,Male,White,College and above,"$20,000 to $74,999",Internet
+1758,45,Female,Others,College and above,"$0 to $19,999",Doctor
+1760,48,Female,Others,College and above,"$20,000 to $74,999",Internet
+1763,56,Male,Others,Under College,"$75,000 or more",Doctor
+1764,62,Male,White,Under College,"$75,000 or more",Internet
+1765,69,Female,Others,Under College,"$0 to $19,999",Others
+1769,31,Female,White,College and above,"$75,000 or more",Internet
+1770,68,Male,White,College and above,"$20,000 to $74,999",Internet
+1771,34,Male,White,College and above,"$20,000 to $74,999",Internet
+1772,33,Female,White,College and above,"$75,000 or more",Internet
+1774,76,Female,White,Under College,"$0 to $19,999",Internet
+1775,31,Male,White,Under College,"$75,000 or more",Internet
+1777,56,Male,White,Under College,"$20,000 to $74,999",Internet
+1778,74,Female,White,College and above,"$0 to $19,999",Internet
+1779,43,Male,White,College and above,"$75,000 or more",Internet
+1780,50,Female,Others,College and above,"$20,000 to $74,999",Internet
+1783,37,Female,Others,College and above,"$20,000 to $74,999",Internet
+1784,49,Female,Others,College and above,"$75,000 or more",Doctor
+1786,42,Male,White,College and above,"$0 to $19,999",Internet
+1787,54,Female,White,Under College,"$20,000 to $74,999",Internet
+1789,60,Female,White,Under College,"$20,000 to $74,999",Internet
+1790,57,Male,White,Under College,"$20,000 to $74,999",Internet
+1792,57,Female,Others,College and above,"$20,000 to $74,999",Internet
+1793,50,Female,Others,Under College,"$0 to $19,999",Internet
+1796,58,Female,Others,Under College,"$0 to $19,999",Others
+1797,55,Male,Others,College and above,"$20,000 to $74,999",Internet
+1802,60,Male,White,Under College,"$75,000 or more",Internet
+1803,57,Male,White,College and above,"$20,000 to $74,999",Internet
+1809,43,Female,White,College and above,"$75,000 or more",Internet
+1815,55,Male,White,Under College,"$0 to $19,999",Doctor
+1816,50,Female,Others,Under College,"$20,000 to $74,999",Internet
+1817,58,Female,Others,Under College,"$0 to $19,999",Others
+1819,60,Female,Others,College and above,"$75,000 or more",Internet
+1822,48,Male,Others,College and above,"$20,000 to $74,999",Others
+1825,26,Female,Others,Under College,"$20,000 to $74,999",Internet
+1826,72,Female,White,Under College,"$75,000 or more",Others
+1827,40,Female,Others,College and above,"$75,000 or more",Internet
+1829,34,Female,White,College and above,"$75,000 or more",Internet
+1832,44,Male,White,College and above,"$20,000 to $74,999",Internet
+1834,58,Female,White,College and above,"$20,000 to $74,999",Internet
+1835,66,Male,White,College and above,"$75,000 or more",Internet
+1836,31,Male,White,College and above,"$75,000 or more",Internet
+1837,42,Male,White,Under College,"$75,000 or more",Doctor
+1838,45,Female,White,Under College,"$20,000 to $74,999",Internet
+1840,72,Female,White,College and above,"$20,000 to $74,999",Doctor
+1841,64,Male,White,Under College,"$20,000 to $74,999",Doctor
+1842,30,Female,White,College and above,"$75,000 or more",Internet
+1845,48,Female,Others,Under College,"$20,000 to $74,999",Internet
+1847,25,Male,White,College and above,"$75,000 or more",Internet
+1848,34,Female,Others,College and above,"$0 to $19,999",Internet
+1853,66,Female,Others,College and above,"$0 to $19,999",Internet
+1858,45,Female,Others,Under College,"$20,000 to $74,999",Others
+1860,66,Female,White,College and above,"$75,000 or more",Doctor
+1866,66,Female,Others,College and above,"$20,000 to $74,999",Internet
+1875,43,Female,Others,Under College,"$0 to $19,999",Internet
+1876,64,Female,White,Under College,"$75,000 or more",Internet
+1878,64,Male,White,Under College,"$75,000 or more",Internet
+1881,28,Male,White,College and above,"$75,000 or more",Internet
+1883,40,Male,White,Under College,"$20,000 to $74,999",Internet
+1884,51,Female,White,Under College,"$20,000 to $74,999",Internet
+1885,45,Male,White,College and above,"$20,000 to $74,999",Internet
+1886,68,Female,Others,Under College,"$0 to $19,999",Doctor
+1887,65,Female,White,College and above,"$75,000 or more",Internet
+1890,78,Male,White,College and above,"$20,000 to $74,999",Doctor
+1891,57,Female,Others,Under College,"$0 to $19,999",Internet
+1897,76,Female,White,Under College,"$0 to $19,999",Internet
+1899,40,Female,Others,College and above,"$20,000 to $74,999",Internet
+1900,45,Female,Others,College and above,"$75,000 or more",Others
+1901,52,Male,Others,College and above,"$75,000 or more",Internet
+1902,41,Male,Others,College and above,"$75,000 or more",Internet
+1903,39,Male,White,Under College,"$75,000 or more",Internet
+1906,59,Male,White,Under College,"$0 to $19,999",Internet
+1907,66,Male,White,College and above,"$20,000 to $74,999",Internet
+1909,60,Female,Others,Under College,"$20,000 to $74,999",Internet
+1913,64,Male,Others,Under College,"$20,000 to $74,999",Internet
+1914,35,Female,White,College and above,"$75,000 or more",Internet
+1915,30,Female,Others,College and above,"$75,000 or more",Internet
+1917,25,Female,Others,College and above,"$20,000 to $74,999",Internet
+1920,68,Male,Others,Under College,"$20,000 to $74,999",Others
+1921,55,Female,White,College and above,"$20,000 to $74,999",Internet
+1923,51,Male,Others,College and above,"$20,000 to $74,999",Doctor
+1925,60,Male,White,Under College,"$20,000 to $74,999",Others
+1926,63,Male,Others,Under College,"$20,000 to $74,999",Internet
+1928,53,Female,Others,College and above,"$20,000 to $74,999",Doctor
+1929,72,Female,Others,Under College,"$0 to $19,999",Others
+1932,55,Female,White,Under College,"$20,000 to $74,999",Internet
+1934,61,Female,Others,Under College,"$20,000 to $74,999",Internet
+1936,28,Male,White,Under College,"$20,000 to $74,999",Internet
+1939,53,Male,White,Under College,"$20,000 to $74,999",Internet
+1940,43,Female,White,College and above,"$20,000 to $74,999",Internet
+1941,41,Female,Others,Under College,"$20,000 to $74,999",Doctor
+1943,66,Female,White,College and above,"$20,000 to $74,999",Internet
+1945,37,Male,Others,Under College,"$20,000 to $74,999",Internet
+1949,62,Female,Others,Under College,"$0 to $19,999",Others
+1951,49,Female,White,College and above,"$20,000 to $74,999",Internet
+1953,66,Male,Others,Under College,"$20,000 to $74,999",Doctor
+1955,62,Male,White,College and above,"$75,000 or more",Internet
+1958,30,Male,White,College and above,"$20,000 to $74,999",Internet
+1959,37,Female,White,College and above,"$20,000 to $74,999",Internet
+1961,66,Male,White,Under College,"$75,000 or more",Internet
+1962,67,Male,White,Under College,"$20,000 to $74,999",Internet
+1966,40,Female,White,College and above,"$75,000 or more",Internet
+1967,55,Female,Others,College and above,"$0 to $19,999",Others
+1968,64,Male,Others,Under College,"$20,000 to $74,999",Internet
+1969,58,Female,Others,College and above,"$20,000 to $74,999",Others
+1971,24,Female,Others,College and above,"$20,000 to $74,999",Internet
+1972,77,Male,White,College and above,"$75,000 or more",Doctor
+1973,64,Female,White,Under College,"$20,000 to $74,999",Doctor
+1974,70,Female,White,Under College,"$20,000 to $74,999",Doctor
+1975,30,Female,White,Under College,"$0 to $19,999",Doctor
+1978,43,Male,Others,Under College,"$0 to $19,999",Doctor
+1979,61,Male,Others,Under College,"$75,000 or more",Internet
+1980,43,Female,Others,Under College,"$20,000 to $74,999",Others
+1984,45,Female,White,Under College,"$75,000 or more",Internet
+1985,38,Female,White,College and above,"$75,000 or more",Internet
+1987,39,Female,White,College and above,"$75,000 or more",Internet
+1989,69,Male,White,College and above,"$20,000 to $74,999",Internet
+1990,50,Female,White,Under College,"$20,000 to $74,999",Internet
+1991,62,Female,White,Under College,"$0 to $19,999",Internet
+1993,50,Female,Others,Under College,"$0 to $19,999",Internet
+1994,64,Male,White,Under College,"$20,000 to $74,999",Internet
+1999,40,Female,Others,Under College,"$20,000 to $74,999",Internet
+2000,55,Male,White,College and above,"$0 to $19,999",Others
+2002,69,Male,White,Under College,"$20,000 to $74,999",Internet
+2003,42,Male,White,College and above,"$75,000 or more",Internet
+2004,54,Female,White,Under College,"$20,000 to $74,999",Internet
+2005,68,Female,Others,Under College,"$20,000 to $74,999",Others
+2007,76,Male,White,Under College,"$20,000 to $74,999",Doctor
+2009,65,Female,Others,Under College,"$20,000 to $74,999",Internet
+2014,58,Female,White,Under College,"$20,000 to $74,999",Internet
+2020,67,Female,Others,Under College,"$75,000 or more",Internet
+2022,56,Male,White,Under College,"$75,000 or more",Internet
+2024,78,Female,White,College and above,"$20,000 to $74,999",Doctor
+2026,62,Female,Others,Under College,"$0 to $19,999",Others
+2030,31,Male,White,College and above,"$20,000 to $74,999",Others
+2031,61,Male,White,College and above,"$75,000 or more",Internet
+2033,78,Female,Others,Under College,"$0 to $19,999",Doctor
+2034,69,Female,Others,Under College,"$0 to $19,999",Others
+2036,22,Male,Others,Under College,"$75,000 or more",Others
+2038,30,Female,White,College and above,"$20,000 to $74,999",Internet
+2039,76,Male,White,Under College,"$20,000 to $74,999",Internet
+2043,48,Female,Others,College and above,"$75,000 or more",Internet
+2047,71,Female,Others,Under College,"$0 to $19,999",Doctor
+2050,43,Female,Others,Under College,"$0 to $19,999",Doctor
+2051,52,Male,White,College and above,"$75,000 or more",Internet
+2053,73,Female,White,College and above,"$75,000 or more",Internet
+2059,74,Female,White,College and above,"$20,000 to $74,999",Doctor
+2062,63,Female,White,Under College,"$20,000 to $74,999",Internet
+2063,24,Female,White,College and above,"$0 to $19,999",Internet
+2064,38,Female,White,Under College,"$75,000 or more",Internet
+2067,68,Male,Others,Under College,"$0 to $19,999",Doctor
+2068,46,Female,Others,College and above,"$75,000 or more",Internet
+2070,72,Female,Others,Under College,"$75,000 or more",Doctor
+2071,61,Female,Others,Under College,"$20,000 to $74,999",Internet
+2073,55,Female,White,Under College,"$75,000 or more",Internet
+2075,49,Female,Others,Under College,"$75,000 or more",Internet
+2076,30,Female,White,College and above,"$20,000 to $74,999",Internet
+2078,42,Female,White,College and above,"$20,000 to $74,999",Internet
+2082,53,Female,White,College and above,"$20,000 to $74,999",Internet
+2084,64,Male,White,Under College,"$20,000 to $74,999",Internet
+2086,53,Male,Others,Under College,"$75,000 or more",Internet
+2089,20,Female,White,Under College,"$20,000 to $74,999",Internet
+2090,52,Female,White,College and above,"$75,000 or more",Internet
+2092,39,Female,Others,College and above,"$20,000 to $74,999",Internet
+2096,55,Male,White,College and above,"$75,000 or more",Internet
+2098,64,Female,White,Under College,"$20,000 to $74,999",Internet
+2104,43,Female,Others,College and above,"$75,000 or more",Internet
+2105,38,Female,White,College and above,"$75,000 or more",Internet
+2108,82,Female,White,College and above,"$20,000 to $74,999",Internet
+2109,58,Female,White,Under College,"$20,000 to $74,999",Internet
+2111,61,Female,Others,Under College,"$20,000 to $74,999",Others
+2113,27,Female,White,Under College,"$0 to $19,999",Internet
+2114,88,Male,White,College and above,"$75,000 or more",Doctor
+2115,37,Female,White,Under College,"$20,000 to $74,999",Internet
+2117,72,Female,White,College and above,"$20,000 to $74,999",Doctor
+2125,53,Female,White,Under College,"$75,000 or more",Internet
+2128,65,Female,White,College and above,"$20,000 to $74,999",Internet
+2129,72,Male,Others,Under College,"$75,000 or more",Doctor
+2137,58,Male,Others,Under College,"$0 to $19,999",Doctor
+2140,37,Female,Others,College and above,"$20,000 to $74,999",Internet
+2141,47,Male,White,College and above,"$20,000 to $74,999",Internet
+2144,39,Male,White,Under College,"$75,000 or more",Internet
+2146,68,Female,White,Under College,"$20,000 to $74,999",Internet
+2148,70,Female,White,College and above,"$20,000 to $74,999",Doctor
+2151,62,Male,White,Under College,"$20,000 to $74,999",Internet
+2152,67,Female,Others,Under College,"$0 to $19,999",Internet
+2154,59,Male,White,Under College,"$0 to $19,999",Internet
+2155,56,Female,White,College and above,"$20,000 to $74,999",Internet
+2157,39,Male,White,College and above,"$75,000 or more",Internet
+2159,29,Female,White,College and above,"$75,000 or more",Others
+2160,57,Male,White,Under College,"$20,000 to $74,999",Internet
+2161,49,Male,White,College and above,"$20,000 to $74,999",Internet
+2162,49,Female,White,College and above,"$20,000 to $74,999",Internet
+2163,59,Male,White,Under College,"$75,000 or more",Doctor
+2164,61,Male,White,College and above,"$20,000 to $74,999",Internet
+2165,58,Female,Others,Under College,"$0 to $19,999",Doctor
+2166,44,Female,Others,Under College,"$0 to $19,999",Doctor
+2167,41,Male,Others,College and above,"$20,000 to $74,999",Internet
+2171,39,Male,White,College and above,"$75,000 or more",Internet
+2175,58,Male,Others,College and above,"$75,000 or more",Internet
+2177,61,Female,Others,College and above,"$20,000 to $74,999",Others
+2178,69,Male,White,Under College,"$20,000 to $74,999",Others
+2180,47,Male,Others,Under College,"$20,000 to $74,999",Internet
+2182,65,Male,White,Under College,"$0 to $19,999",Doctor
+2185,82,Male,White,College and above,"$75,000 or more",Doctor
+2187,49,Female,Others,College and above,"$20,000 to $74,999",Doctor
+2189,74,Male,White,Under College,"$75,000 or more",Internet
+2190,66,Female,Others,College and above,"$20,000 to $74,999",Internet
+2192,49,Female,Others,Under College,"$20,000 to $74,999",Internet
+2195,32,Female,White,College and above,"$75,000 or more",Internet
+2197,51,Female,Others,College and above,"$20,000 to $74,999",Internet
+2199,62,Male,Others,College and above,"$75,000 or more",Internet
+2200,43,Female,Others,College and above,"$20,000 to $74,999",Internet
+2204,68,Female,Others,Under College,"$20,000 to $74,999",Doctor
+2205,50,Male,Others,Under College,"$0 to $19,999",Doctor
+2206,25,Female,White,College and above,"$20,000 to $74,999",Doctor
+2207,63,Female,White,Under College,"$75,000 or more",Internet
+2210,61,Male,Others,Under College,"$0 to $19,999",Others
+2211,65,Female,White,College and above,"$20,000 to $74,999",Doctor
+2214,69,Male,White,College and above,"$75,000 or more",Internet
+2215,55,Male,White,Under College,"$20,000 to $74,999",Doctor
+2216,76,Male,Others,Under College,"$20,000 to $74,999",Others
+2219,62,Female,White,Under College,"$20,000 to $74,999",Others
+2220,59,Female,White,College and above,"$75,000 or more",Internet
+2221,68,Male,White,Under College,"$20,000 to $74,999",Internet
+2222,71,Male,White,College and above,"$75,000 or more",Doctor
+2223,29,Female,Others,College and above,"$75,000 or more",Doctor
+2224,38,Female,White,College and above,"$75,000 or more",Internet
+2226,31,Female,White,College and above,"$75,000 or more",Internet
+2228,27,Male,White,College and above,"$20,000 to $74,999",Internet
+2230,69,Male,White,College and above,"$20,000 to $74,999",Internet
+2232,77,Female,White,Under College,"$0 to $19,999",Internet
+2233,26,Female,White,College and above,"$75,000 or more",Internet
+2234,49,Female,White,College and above,"$75,000 or more",Internet
+2235,33,Female,White,College and above,"$20,000 to $74,999",Internet
+2236,27,Female,Others,Under College,"$20,000 to $74,999",Internet
+2237,26,Male,White,College and above,"$75,000 or more",Internet
+2239,43,Male,White,Under College,"$20,000 to $74,999",Internet
+2240,58,Male,White,College and above,"$20,000 to $74,999",Internet
+2243,50,Female,Others,College and above,"$75,000 or more",Internet
+2244,75,Female,White,Under College,"$20,000 to $74,999",Others
+2245,70,Female,White,Under College,"$20,000 to $74,999",Internet
+2246,47,Female,White,College and above,"$75,000 or more",Doctor
+2252,48,Female,Others,College and above,"$20,000 to $74,999",Internet
+2255,28,Female,White,College and above,"$75,000 or more",Internet
+2256,66,Female,Others,Under College,"$0 to $19,999",Doctor
+2257,44,Male,White,College and above,"$20,000 to $74,999",Internet
+2258,50,Male,White,College and above,"$20,000 to $74,999",Internet
+2259,71,Female,Others,College and above,"$20,000 to $74,999",Internet
+2261,65,Female,White,College and above,"$75,000 or more",Doctor
+2262,68,Male,Others,Under College,"$20,000 to $74,999",Doctor
+2265,61,Male,White,Under College,"$20,000 to $74,999",Internet
+2266,92,Female,White,Under College,"$20,000 to $74,999",Doctor
+2268,55,Female,White,College and above,"$75,000 or more",Internet
+2269,77,Female,Others,Under College,"$20,000 to $74,999",Others
+2270,66,Female,Others,College and above,"$20,000 to $74,999",Others
+2271,54,Male,Others,Under College,"$0 to $19,999",Others
+2272,37,Male,Others,College and above,"$0 to $19,999",Internet
+2273,91,Female,White,College and above,"$20,000 to $74,999",Internet
+2275,74,Female,Others,Under College,"$20,000 to $74,999",Internet
+2276,52,Male,Others,Under College,"$20,000 to $74,999",Internet
+2277,65,Female,White,Under College,"$0 to $19,999",Doctor
+2278,49,Male,Others,Under College,"$20,000 to $74,999",Internet
+2280,34,Female,White,College and above,"$75,000 or more",Internet
+2282,23,Female,Others,College and above,"$20,000 to $74,999",Internet
+2283,73,Female,White,Under College,"$20,000 to $74,999",Internet
+2284,30,Female,White,College and above,"$20,000 to $74,999",Internet
+2285,65,Male,Others,Under College,"$0 to $19,999",Others
+2286,49,Male,Others,Under College,"$20,000 to $74,999",Doctor
+2287,59,Male,White,Under College,"$75,000 or more",Internet
+2288,41,Female,White,College and above,"$75,000 or more",Internet
+2290,60,Female,Others,College and above,"$0 to $19,999",Others
+2292,78,Male,White,Under College,"$75,000 or more",Internet
+2293,79,Female,White,Under College,"$20,000 to $74,999",Internet
+2295,36,Female,Others,College and above,"$0 to $19,999",Internet
+2300,63,Female,White,College and above,"$20,000 to $74,999",Internet
+2304,52,Female,Others,Under College,"$0 to $19,999",Internet
+2305,68,Female,Others,Under College,"$20,000 to $74,999",Internet
+2306,58,Male,White,College and above,"$75,000 or more",Internet
+2308,69,Female,White,Under College,"$20,000 to $74,999",Doctor
+2309,57,Female,Others,Under College,"$0 to $19,999",Doctor
+2310,35,Male,White,College and above,"$75,000 or more",Internet
+2311,48,Female,White,College and above,"$75,000 or more",Internet
+2313,72,Male,Others,Under College,"$0 to $19,999",Others
+2314,49,Female,White,College and above,"$75,000 or more",Internet
+2316,61,Male,White,College and above,"$75,000 or more",Internet
+2317,67,Female,White,College and above,"$20,000 to $74,999",Doctor
+2320,80,Male,White,College and above,"$75,000 or more",Doctor
+2324,42,Female,Others,College and above,"$20,000 to $74,999",Internet
+2325,57,Female,White,Under College,"$20,000 to $74,999",Internet
+2327,47,Female,Others,College and above,"$75,000 or more",Internet
+2328,68,Male,White,Under College,"$20,000 to $74,999",Doctor
+2331,51,Female,White,Under College,"$20,000 to $74,999",Internet
+2334,52,Female,Others,College and above,"$20,000 to $74,999",Internet
+2335,23,Female,White,College and above,"$20,000 to $74,999",Internet
+2336,72,Male,White,Under College,"$0 to $19,999",Internet
+2339,80,Female,White,College and above,"$75,000 or more",Internet
+2340,52,Male,White,College and above,"$20,000 to $74,999",Internet
+2341,69,Male,White,College and above,"$20,000 to $74,999",Internet
+2342,70,Female,White,College and above,"$20,000 to $74,999",Internet
+2343,50,Male,White,College and above,"$75,000 or more",Internet
+2345,43,Male,Others,College and above,"$75,000 or more",Internet
+2346,35,Male,White,College and above,"$75,000 or more",Internet
+2347,59,Male,White,Under College,"$75,000 or more",Internet
+2349,44,Female,White,College and above,"$75,000 or more",Internet
+2352,36,Male,White,College and above,"$20,000 to $74,999",Internet
+2354,82,Male,Others,College and above,"$20,000 to $74,999",Others
+2355,65,Male,White,Under College,"$20,000 to $74,999",Internet
+2357,70,Female,White,Under College,"$20,000 to $74,999",Doctor
+2363,65,Male,White,Under College,"$20,000 to $74,999",Internet
+2365,68,Female,Others,College and above,"$20,000 to $74,999",Internet
+2367,68,Male,Others,College and above,"$75,000 or more",Internet
+2368,69,Female,White,Under College,"$20,000 to $74,999",Internet
+2372,65,Female,Others,Under College,"$20,000 to $74,999",Internet
+2373,57,Female,White,Under College,"$75,000 or more",Internet
+2375,76,Female,White,College and above,"$20,000 to $74,999",Internet
+2376,55,Female,Others,College and above,"$20,000 to $74,999",Doctor
+2377,32,Male,White,College and above,"$20,000 to $74,999",Internet
+2378,61,Female,White,Under College,"$75,000 or more",Internet
+2380,26,Female,White,Under College,"$0 to $19,999",Internet
+2382,24,Female,White,College and above,"$0 to $19,999",Internet
+2383,69,Male,White,College and above,"$75,000 or more",Others
+2385,40,Male,White,Under College,"$20,000 to $74,999",Others
+2387,78,Female,White,Under College,"$20,000 to $74,999",Doctor
+2388,50,Female,White,College and above,"$75,000 or more",Internet
+2390,62,Female,White,Under College,"$20,000 to $74,999",Internet
+2397,66,Female,Others,Under College,"$20,000 to $74,999",Internet
+2399,54,Male,White,Under College,"$75,000 or more",Internet
+2403,56,Female,White,Under College,"$20,000 to $74,999",Internet
+2406,68,Female,Others,College and above,"$20,000 to $74,999",Others
+2407,59,Male,White,Under College,"$75,000 or more",Internet
+2408,38,Female,Others,Under College,"$20,000 to $74,999",Internet
+2409,46,Female,White,Under College,"$20,000 to $74,999",Doctor
+2410,54,Male,White,Under College,"$20,000 to $74,999",Others
+2414,38,Male,White,College and above,"$20,000 to $74,999",Internet
+2416,86,Female,Others,Under College,"$0 to $19,999",Doctor
+2419,38,Male,White,College and above,"$75,000 or more",Internet
+2423,53,Female,White,Under College,"$20,000 to $74,999",Internet
+2425,69,Male,Others,College and above,"$0 to $19,999",Doctor
+2430,56,Male,White,Under College,"$0 to $19,999",Internet
+2431,42,Female,White,Under College,"$0 to $19,999",Internet
+2432,51,Female,White,Under College,"$75,000 or more",Internet
+2433,52,Female,Others,Under College,"$20,000 to $74,999",Internet
+2435,70,Male,Others,Under College,"$20,000 to $74,999",Doctor
+2437,27,Female,Others,College and above,"$20,000 to $74,999",Internet
+2438,71,Female,White,College and above,"$20,000 to $74,999",Doctor
+2440,71,Female,White,College and above,"$20,000 to $74,999",Internet
+2445,37,Male,White,College and above,"$20,000 to $74,999",Doctor
+2446,30,Female,White,Under College,"$20,000 to $74,999",Others
+2447,58,Male,Others,Under College,"$75,000 or more",Others
+2448,53,Female,White,College and above,"$0 to $19,999",Internet
+2450,66,Male,White,College and above,"$20,000 to $74,999",Internet
+2451,66,Male,White,College and above,"$20,000 to $74,999",Internet
+2452,60,Female,Others,College and above,"$20,000 to $74,999",Internet
+2453,63,Female,White,College and above,"$20,000 to $74,999",Internet
+2455,83,Male,White,Under College,"$20,000 to $74,999",Doctor
+2458,44,Male,White,Under College,"$75,000 or more",Internet
+2459,63,Female,White,College and above,"$75,000 or more",Doctor
+2465,87,Male,White,College and above,"$75,000 or more",Internet
+2469,70,Male,White,College and above,"$20,000 to $74,999",Internet
+2470,64,Male,White,Under College,"$0 to $19,999",Internet
+2472,50,Female,White,College and above,"$75,000 or more",Internet
+2474,42,Female,White,College and above,"$75,000 or more",Internet
+2475,81,Female,White,College and above,"$20,000 to $74,999",Internet
+2476,74,Male,Others,Under College,"$0 to $19,999",Internet
+2479,24,Male,White,College and above,"$20,000 to $74,999",Internet
+2480,64,Male,White,College and above,"$75,000 or more",Doctor
+2481,60,Female,White,Under College,"$20,000 to $74,999",Internet
+2482,63,Male,White,College and above,"$75,000 or more",Internet
+2483,68,Male,White,College and above,"$75,000 or more",Internet
+2488,39,Male,White,Under College,"$20,000 to $74,999",Internet
+2489,82,Female,White,College and above,"$75,000 or more",Others
+2490,65,Male,White,Under College,"$0 to $19,999",Others
+2492,40,Female,White,College and above,"$20,000 to $74,999",Internet
+2494,49,Female,White,College and above,"$20,000 to $74,999",Internet
+2495,67,Female,White,Under College,"$75,000 or more",Internet
+2496,38,Female,Others,Under College,"$20,000 to $74,999",Internet
+2497,28,Female,White,College and above,"$75,000 or more",Internet
+2498,31,Male,Others,Under College,"$20,000 to $74,999",Internet
+2500,50,Female,Others,College and above,"$75,000 or more",Internet
+2501,45,Female,Others,College and above,"$20,000 to $74,999",Internet
+2502,25,Male,White,College and above,"$20,000 to $74,999",Internet
+2504,62,Female,Others,Under College,"$20,000 to $74,999",Others
+2507,63,Female,Others,Under College,"$75,000 or more",Internet
+2508,60,Female,White,Under College,"$20,000 to $74,999",Internet
+2509,46,Female,Others,Under College,"$0 to $19,999",Doctor
+2510,35,Female,White,Under College,"$20,000 to $74,999",Internet
+2511,38,Female,Others,Under College,"$0 to $19,999",Others
+2512,69,Male,Others,Under College,"$20,000 to $74,999",Doctor
+2513,64,Female,Others,College and above,"$20,000 to $74,999",Internet
+2514,63,Female,White,College and above,"$75,000 or more",Internet
+2517,32,Female,White,College and above,"$20,000 to $74,999",Others
+2518,60,Male,White,Under College,"$20,000 to $74,999",Internet
+2520,42,Female,Others,College and above,"$0 to $19,999",Doctor
+2523,57,Female,White,College and above,"$20,000 to $74,999",Internet
+2524,82,Male,White,College and above,"$75,000 or more",Internet
+2526,40,Female,White,College and above,"$20,000 to $74,999",Internet
+2527,71,Female,Others,Under College,"$20,000 to $74,999",Internet
+2528,45,Male,White,Under College,"$75,000 or more",Internet
+2531,59,Male,White,College and above,"$75,000 or more",Internet
+2533,29,Female,Others,Under College,"$0 to $19,999",Internet
+2534,37,Female,White,College and above,"$75,000 or more",Internet
+2535,79,Female,Others,Under College,"$0 to $19,999",Doctor
+2541,22,Male,White,Under College,"$20,000 to $74,999",Internet
+2543,66,Male,White,College and above,"$75,000 or more",Internet
+2545,47,Female,White,College and above,"$75,000 or more",Internet
+2550,66,Female,White,College and above,"$75,000 or more",Internet
+2552,67,Female,White,Under College,"$20,000 to $74,999",Internet
+2553,64,Female,White,Under College,"$20,000 to $74,999",Doctor
+2557,32,Female,White,College and above,"$75,000 or more",Internet
+2558,60,Female,Others,Under College,"$0 to $19,999",Others
+2563,58,Male,White,Under College,"$0 to $19,999",Internet
+2564,29,Female,White,College and above,"$75,000 or more",Internet
+2569,63,Male,White,College and above,"$75,000 or more",Internet
+2570,51,Male,White,Under College,"$75,000 or more",Doctor
+2571,53,Male,Others,Under College,"$20,000 to $74,999",Internet
+2572,55,Female,White,College and above,"$20,000 to $74,999",Internet
+2573,69,Female,Others,Under College,"$0 to $19,999",Doctor
+2575,59,Male,White,College and above,"$20,000 to $74,999",Others
+2577,43,Female,White,College and above,"$75,000 or more",Others
+2578,60,Female,Others,College and above,"$20,000 to $74,999",Internet
+2581,55,Female,White,College and above,"$75,000 or more",Internet
+2583,49,Male,White,College and above,"$20,000 to $74,999",Internet
+2585,55,Female,Others,College and above,"$0 to $19,999",Internet
+2588,63,Male,White,College and above,"$75,000 or more",Internet
+2589,29,Male,White,College and above,"$75,000 or more",Internet
+2591,54,Female,White,Under College,"$20,000 to $74,999",Internet
+2593,40,Female,White,College and above,"$75,000 or more",Doctor
+2597,70,Male,White,Under College,"$75,000 or more",Internet
+2598,50,Female,White,College and above,"$75,000 or more",Internet
+2601,80,Male,Others,College and above,"$75,000 or more",Doctor
+2605,58,Male,White,Under College,"$75,000 or more",Internet
+2606,74,Female,Others,College and above,"$20,000 to $74,999",Internet
+2608,24,Female,White,Under College,"$20,000 to $74,999",Internet
+2611,71,Female,White,Under College,"$0 to $19,999",Others
+2612,54,Female,White,Under College,"$75,000 or more",Internet
+2613,71,Female,White,Under College,"$0 to $19,999",Internet
+2615,78,Male,White,College and above,"$20,000 to $74,999",Internet
+2616,68,Female,White,College and above,"$75,000 or more",Doctor
+2617,39,Male,Others,Under College,"$75,000 or more",Internet
+2619,55,Female,Others,Under College,"$0 to $19,999",Internet
+2621,69,Female,White,College and above,"$20,000 to $74,999",Internet
+2624,29,Female,Others,Under College,"$20,000 to $74,999",Internet
+2627,66,Female,White,Under College,"$20,000 to $74,999",Internet
+2629,57,Male,Others,College and above,"$75,000 or more",Doctor
+2632,73,Female,White,College and above,"$20,000 to $74,999",Internet
+2633,64,Male,White,Under College,"$75,000 or more",Internet
+2635,71,Male,Others,College and above,"$75,000 or more",Doctor
+2638,63,Male,White,Under College,"$20,000 to $74,999",Internet
+2641,48,Female,White,College and above,"$75,000 or more",Internet
+2642,38,Female,White,College and above,"$75,000 or more",Internet
+2643,52,Male,White,College and above,"$75,000 or more",Internet
+2644,60,Female,White,Under College,"$0 to $19,999",Internet
+2646,61,Female,White,Under College,"$20,000 to $74,999",Internet
+2648,36,Female,Others,Under College,"$0 to $19,999",Internet
+2651,43,Female,White,College and above,"$20,000 to $74,999",Internet
+2652,68,Male,White,College and above,"$75,000 or more",Internet
+2653,36,Male,White,Under College,"$20,000 to $74,999",Internet
+2654,76,Male,White,College and above,"$75,000 or more",Internet
+2656,46,Female,White,Under College,"$0 to $19,999",Internet
+2659,66,Female,Others,Under College,"$20,000 to $74,999",Others
+2660,44,Male,White,College and above,"$20,000 to $74,999",Internet
+2661,59,Female,Others,Under College,"$0 to $19,999",Doctor
+2662,69,Female,Others,College and above,"$0 to $19,999",Internet
+2663,23,Female,Others,College and above,"$0 to $19,999",Internet
+2664,38,Male,Others,College and above,"$20,000 to $74,999",Others
+2665,77,Female,Others,College and above,"$75,000 or more",Doctor
+2667,80,Female,White,Under College,"$20,000 to $74,999",Others
+2668,69,Female,White,Under College,"$20,000 to $74,999",Internet
+2674,55,Male,Others,Under College,"$20,000 to $74,999",Internet
+2676,77,Female,White,College and above,"$20,000 to $74,999",Internet
+2678,39,Female,White,College and above,"$75,000 or more",Internet
+2679,70,Female,White,Under College,"$0 to $19,999",Others
+2680,29,Female,White,College and above,"$0 to $19,999",Internet
+2684,63,Male,White,College and above,"$75,000 or more",Doctor
+2685,38,Male,White,College and above,"$75,000 or more",Internet
+2686,52,Female,White,Under College,"$20,000 to $74,999",Internet
+2687,66,Female,Others,College and above,"$20,000 to $74,999",Doctor
+2690,42,Female,White,Under College,"$20,000 to $74,999",Internet
+2693,39,Female,White,College and above,"$75,000 or more",Internet
+2694,42,Male,White,College and above,"$20,000 to $74,999",Internet
+2695,57,Female,Others,College and above,"$0 to $19,999",Internet
+2696,39,Female,Others,Under College,"$0 to $19,999",Internet
+2697,34,Male,Others,College and above,"$75,000 or more",Internet
+2699,79,Female,Others,Under College,"$20,000 to $74,999",Doctor
+2702,88,Female,White,College and above,"$20,000 to $74,999",Others
+2705,70,Female,White,Under College,"$20,000 to $74,999",Doctor
+2710,66,Female,Others,College and above,"$0 to $19,999",Internet
+2711,61,Female,White,Under College,"$20,000 to $74,999",Others
+2713,57,Female,White,Under College,"$20,000 to $74,999",Internet
+2716,47,Female,White,College and above,"$75,000 or more",Internet
+2717,52,Female,Others,Under College,"$20,000 to $74,999",Internet
+2718,36,Male,White,College and above,"$20,000 to $74,999",Internet
+2720,53,Male,White,College and above,"$20,000 to $74,999",Internet
+2725,73,Female,Others,College and above,"$20,000 to $74,999",Internet
+2727,57,Female,White,Under College,"$20,000 to $74,999",Internet
+2728,21,Male,White,Under College,"$75,000 or more",Internet
+2730,55,Male,White,College and above,"$20,000 to $74,999",Doctor
+2734,42,Male,Others,College and above,"$20,000 to $74,999",Internet
+2739,58,Female,White,College and above,"$75,000 or more",Internet
+2741,66,Male,Others,Under College,"$20,000 to $74,999",Others
+2742,25,Female,White,Under College,"$0 to $19,999",Others
+2743,77,Male,White,College and above,"$75,000 or more",Internet
+2744,62,Female,White,Under College,"$0 to $19,999",Internet
+2746,68,Male,White,Under College,"$0 to $19,999",Doctor
+2747,63,Female,White,Under College,"$0 to $19,999",Internet
+2748,64,Male,White,Under College,"$20,000 to $74,999",Others
+2750,46,Female,Others,College and above,"$0 to $19,999",Others
+2751,53,Female,Others,College and above,"$20,000 to $74,999",Others
+2753,70,Female,White,Under College,"$20,000 to $74,999",Internet
+2754,72,Female,White,Under College,"$0 to $19,999",Others
+2759,40,Male,Others,College and above,"$75,000 or more",Internet
+2761,43,Female,White,Under College,"$20,000 to $74,999",Internet
+2762,70,Female,White,Under College,"$20,000 to $74,999",Doctor
+2767,33,Female,Others,College and above,"$20,000 to $74,999",Internet
+2771,55,Female,White,Under College,"$75,000 or more",Internet
+2772,43,Male,White,Under College,"$75,000 or more",Internet
+2781,25,Female,White,College and above,"$20,000 to $74,999",Internet
+2782,44,Female,White,Under College,"$75,000 or more",Internet
+2783,21,Female,White,College and above,"$75,000 or more",Internet
+2784,53,Female,White,Under College,"$75,000 or more",Internet
+2786,59,Female,White,College and above,"$75,000 or more",Internet
+2787,55,Female,Others,College and above,"$0 to $19,999",Doctor
+2788,39,Female,Others,College and above,"$20,000 to $74,999",Others
+2789,35,Female,White,Under College,"$75,000 or more",Internet
+2790,27,Female,White,College and above,"$75,000 or more",Internet
+2791,38,Female,White,College and above,"$20,000 to $74,999",Internet
+2795,55,Female,Others,Under College,"$0 to $19,999",Others
+2796,78,Male,White,Under College,"$20,000 to $74,999",Others
+2798,63,Female,White,Under College,"$0 to $19,999",Internet
+2801,56,Male,Others,College and above,"$75,000 or more",Internet
+2806,73,Female,White,Under College,"$75,000 or more",Internet
+2809,67,Female,White,College and above,"$75,000 or more",Internet
+2811,60,Female,White,College and above,"$20,000 to $74,999",Internet
+2813,88,Female,White,Under College,"$0 to $19,999",Internet
+2814,38,Male,White,Under College,"$75,000 or more",Internet
+2817,74,Male,White,Under College,"$20,000 to $74,999",Doctor
+2820,51,Male,White,Under College,"$20,000 to $74,999",Internet
+2822,67,Female,Others,College and above,"$20,000 to $74,999",Internet
+2823,30,Male,White,College and above,"$20,000 to $74,999",Internet
+2824,64,Female,White,Under College,"$0 to $19,999",Doctor
+2825,62,Male,Others,Under College,"$0 to $19,999",Doctor
+2828,46,Female,White,Under College,"$0 to $19,999",Doctor
+2831,52,Female,White,Under College,"$20,000 to $74,999",Internet
+2833,30,Male,White,Under College,"$20,000 to $74,999",Internet
+2835,45,Male,White,Under College,"$20,000 to $74,999",Internet
+2837,62,Male,White,College and above,"$20,000 to $74,999",Internet
+2838,73,Male,White,College and above,"$75,000 or more",Internet
+2840,55,Male,White,College and above,"$0 to $19,999",Internet
+2843,59,Female,White,Under College,"$0 to $19,999",Doctor
+2844,52,Female,White,College and above,"$20,000 to $74,999",Others
+2846,62,Male,White,Under College,"$20,000 to $74,999",Internet
+2853,85,Male,White,Under College,"$20,000 to $74,999",Doctor
+2854,53,Female,White,College and above,"$75,000 or more",Internet
+2855,59,Male,White,Under College,"$20,000 to $74,999",Internet
+2859,85,Male,White,Under College,"$20,000 to $74,999",Doctor
+2862,39,Female,Others,College and above,"$75,000 or more",Doctor
+2863,51,Female,White,Under College,"$75,000 or more",Internet
+2864,81,Male,White,College and above,"$75,000 or more",Doctor
+2869,45,Female,White,College and above,"$75,000 or more",Internet
+2871,31,Male,Others,College and above,"$20,000 to $74,999",Internet
+2872,56,Male,White,Under College,"$75,000 or more",Internet
+2874,52,Female,White,Under College,"$0 to $19,999",Internet
+2876,62,Female,Others,College and above,"$20,000 to $74,999",Internet
+2878,42,Male,White,College and above,"$75,000 or more",Internet
+2880,77,Male,White,Under College,"$20,000 to $74,999",Internet
+2881,32,Male,White,College and above,"$75,000 or more",Internet
+2885,43,Female,White,Under College,"$20,000 to $74,999",Internet
+2886,40,Female,White,College and above,"$75,000 or more",Internet
+2892,44,Female,White,Under College,"$20,000 to $74,999",Internet
+2894,41,Female,White,College and above,"$75,000 or more",Internet
+2896,46,Female,White,College and above,"$75,000 or more",Internet
+2898,67,Female,White,College and above,"$0 to $19,999",Others
+2900,67,Female,White,College and above,"$20,000 to $74,999",Internet
+2901,42,Female,White,College and above,"$75,000 or more",Others
+2902,74,Female,White,College and above,"$20,000 to $74,999",Doctor
+2904,64,Male,White,Under College,"$20,000 to $74,999",Doctor
+2907,59,Female,White,Under College,"$0 to $19,999",Others
+2908,66,Female,White,Under College,"$0 to $19,999",Doctor
+2909,29,Male,White,College and above,"$75,000 or more",Internet
+2911,47,Female,White,Under College,"$20,000 to $74,999",Doctor
+2912,53,Female,White,Under College,"$20,000 to $74,999",Doctor
+2914,66,Male,White,Under College,"$20,000 to $74,999",Internet
+2920,29,Female,White,Under College,"$20,000 to $74,999",Internet
+2921,56,Female,White,College and above,"$75,000 or more",Internet
+2926,35,Male,White,College and above,"$20,000 to $74,999",Internet
+2929,60,Male,White,Under College,"$75,000 or more",Internet
+2930,68,Male,White,College and above,"$20,000 to $74,999",Doctor
+2932,81,Female,White,Under College,"$20,000 to $74,999",Internet
+2934,47,Female,White,Under College,"$20,000 to $74,999",Doctor
+2938,35,Male,White,College and above,"$75,000 or more",Internet
+2939,40,Male,Others,College and above,"$20,000 to $74,999",Internet
+2941,76,Male,White,College and above,"$20,000 to $74,999",Doctor
+2948,48,Female,White,Under College,"$0 to $19,999",Internet
+2951,61,Female,Others,Under College,"$0 to $19,999",Doctor
+2952,65,Female,Others,College and above,"$20,000 to $74,999",Internet
+2953,62,Male,Others,Under College,"$75,000 or more",Internet
+2954,58,Female,Others,College and above,"$75,000 or more",Doctor
+2955,42,Male,White,College and above,"$20,000 to $74,999",Internet
+2956,40,Female,White,College and above,"$75,000 or more",Internet
+2958,38,Female,White,Under College,"$75,000 or more",Internet
+2961,33,Male,White,College and above,"$75,000 or more",Internet
+2962,49,Female,White,College and above,"$75,000 or more",Internet
+2963,43,Male,Others,College and above,"$75,000 or more",Internet
+2965,19,Male,Others,Under College,"$0 to $19,999",Internet
+2969,86,Male,White,College and above,"$20,000 to $74,999",Doctor
+2971,33,Male,Others,College and above,"$75,000 or more",Internet
+2972,58,Female,White,College and above,"$75,000 or more",Others
+2974,86,Female,Others,Under College,"$75,000 or more",Doctor
+2979,57,Male,White,College and above,"$75,000 or more",Doctor
+2980,66,Male,White,Under College,"$0 to $19,999",Doctor
+2983,28,Male,White,College and above,"$75,000 or more",Internet
+2984,60,Male,White,Under College,"$20,000 to $74,999",Doctor
+2985,67,Female,White,Under College,"$20,000 to $74,999",Others
+2988,52,Female,White,College and above,"$20,000 to $74,999",Internet
+2989,45,Female,White,Under College,"$20,000 to $74,999",Others
+2995,70,Female,Others,Under College,"$0 to $19,999",Doctor
+3004,23,Female,White,Under College,"$0 to $19,999",Internet
+3007,51,Female,White,Under College,"$75,000 or more",Doctor
+3014,60,Female,White,Under College,"$75,000 or more",Internet
+3018,63,Female,White,College and above,"$75,000 or more",Internet
+3019,91,Female,White,Under College,"$20,000 to $74,999",Internet
+3021,39,Female,Others,College and above,"$75,000 or more",Internet
+3025,32,Male,White,College and above,"$75,000 or more",Internet
+3029,45,Female,White,College and above,"$20,000 to $74,999",Internet
+3030,71,Male,White,Under College,"$20,000 to $74,999",Internet
+3036,66,Male,White,College and above,"$75,000 or more",Internet
+3037,48,Female,White,College and above,"$20,000 to $74,999",Internet
+3038,64,Male,White,Under College,"$0 to $19,999",Doctor
+3039,53,Male,White,Under College,"$75,000 or more",Doctor
+3042,68,Female,Others,College and above,"$75,000 or more",Doctor
+3043,43,Male,White,Under College,"$75,000 or more",Internet
+3044,71,Female,White,Under College,"$20,000 to $74,999",Doctor
+3045,46,Female,White,Under College,"$20,000 to $74,999",Internet
+3046,54,Male,White,Under College,"$20,000 to $74,999",Internet
+3048,56,Female,White,College and above,"$20,000 to $74,999",Others
+3050,48,Male,White,College and above,"$75,000 or more",Internet
+3055,36,Female,Others,College and above,"$0 to $19,999",Internet
+3056,37,Male,White,Under College,"$75,000 or more",Internet
+3057,59,Female,White,College and above,"$75,000 or more",Internet
+3058,35,Male,White,Under College,"$75,000 or more",Internet
+3060,56,Female,White,Under College,"$20,000 to $74,999",Internet
+3062,76,Female,White,College and above,"$0 to $19,999",Doctor
+3066,48,Female,Others,College and above,"$20,000 to $74,999",Internet
+3067,43,Male,White,Under College,"$75,000 or more",Doctor
+3068,26,Male,Others,College and above,"$75,000 or more",Internet
+3073,59,Female,White,Under College,"$20,000 to $74,999",Internet
+3076,45,Male,White,College and above,"$75,000 or more",Internet
+3078,75,Male,White,Under College,"$20,000 to $74,999",Internet
+3079,62,Male,Others,College and above,"$20,000 to $74,999",Others
+3082,38,Female,Others,Under College,"$20,000 to $74,999",Internet
+3088,56,Male,White,Under College,"$75,000 or more",Internet
+3090,62,Female,White,Under College,"$20,000 to $74,999",Others
+3091,19,Male,Others,Under College,"$20,000 to $74,999",Others
+3092,71,Male,Others,Under College,"$20,000 to $74,999",Doctor
+3095,65,Female,White,College and above,"$75,000 or more",Internet
+3096,82,Female,White,Under College,"$0 to $19,999",Doctor
+3099,64,Male,White,College and above,"$75,000 or more",Internet
+3100,34,Male,White,Under College,"$0 to $19,999",Internet
+3101,53,Female,White,Under College,"$20,000 to $74,999",Internet
+3106,35,Female,Others,College and above,"$75,000 or more",Internet
+3108,60,Female,Others,Under College,"$20,000 to $74,999",Internet
+3110,46,Female,Others,College and above,"$0 to $19,999",Internet
+3111,79,Female,White,Under College,"$0 to $19,999",Doctor
+3112,42,Male,White,Under College,"$75,000 or more",Internet
+3114,60,Female,White,Under College,"$75,000 or more",Others
+3115,57,Female,White,Under College,"$20,000 to $74,999",Others
+3117,37,Male,White,College and above,"$75,000 or more",Internet
+3118,49,Female,White,Under College,"$0 to $19,999",Internet
+3122,49,Male,Others,College and above,"$75,000 or more",Doctor
+3126,56,Female,White,College and above,"$20,000 to $74,999",Doctor
+3127,66,Female,White,Under College,"$0 to $19,999",Others
+3130,50,Female,White,College and above,"$20,000 to $74,999",Internet
+3132,38,Female,White,College and above,"$75,000 or more",Internet
+3135,50,Female,White,College and above,"$20,000 to $74,999",Internet
+3137,74,Female,White,College and above,"$75,000 or more",Internet
+3139,65,Male,White,Under College,"$75,000 or more",Internet
+3140,65,Male,Others,Under College,"$20,000 to $74,999",Internet
+3141,28,Female,White,College and above,"$75,000 or more",Internet
+3142,41,Male,White,College and above,"$75,000 or more",Internet
+3143,78,Male,White,Under College,"$75,000 or more",Internet
+3152,33,Male,White,College and above,"$75,000 or more",Internet
+3154,48,Male,Others,Under College,"$75,000 or more",Internet
+3155,40,Female,White,Under College,"$20,000 to $74,999",Internet
+3160,43,Male,White,College and above,"$75,000 or more",Internet
+3161,55,Male,White,Under College,"$0 to $19,999",Internet
+3163,33,Male,White,Under College,"$75,000 or more",Internet
+3164,56,Male,Others,Under College,"$20,000 to $74,999",Internet
+3165,60,Male,White,College and above,"$75,000 or more",Internet
+3167,59,Male,White,Under College,"$0 to $19,999",Doctor
+3168,24,Male,White,Under College,"$20,000 to $74,999",Internet
+3169,54,Male,White,College and above,"$0 to $19,999",Internet
+3171,67,Male,White,Under College,"$20,000 to $74,999",Internet
+3173,35,Female,White,College and above,"$75,000 or more",Internet
+3175,55,Male,White,Under College,"$75,000 or more",Doctor
+3176,20,Female,White,Under College,"$20,000 to $74,999",Internet
+3177,75,Male,White,Under College,"$20,000 to $74,999",Internet
+3179,40,Male,Others,College and above,"$20,000 to $74,999",Doctor
+3184,42,Female,White,Under College,"$75,000 or more",Internet
+3185,55,Female,White,College and above,"$75,000 or more",Internet
+3188,66,Female,White,Under College,"$0 to $19,999",Others
+3190,33,Female,White,Under College,"$20,000 to $74,999",Internet
+3192,65,Female,White,Under College,"$20,000 to $74,999",Others
+3193,50,Male,White,Under College,"$0 to $19,999",Internet
+3195,42,Male,Others,College and above,"$75,000 or more",Internet
+3198,61,Female,White,Under College,"$0 to $19,999",Others
+3199,56,Male,White,Under College,"$75,000 or more",Internet
+3200,69,Male,White,Under College,"$75,000 or more",Internet
+3201,23,Female,White,Under College,"$0 to $19,999",Internet
+3206,72,Female,White,College and above,"$20,000 to $74,999",Internet
+3207,26,Female,White,College and above,"$20,000 to $74,999",Internet
+3208,75,Male,Others,College and above,"$20,000 to $74,999",Others
+3209,43,Male,White,Under College,"$75,000 or more",Internet
+3210,66,Male,Others,College and above,"$75,000 or more",Internet
+3211,51,Female,White,Under College,"$75,000 or more",Internet
+3212,58,Female,White,Under College,"$0 to $19,999",Internet
+3214,57,Male,Others,College and above,"$75,000 or more",Internet
+3215,72,Female,White,College and above,"$75,000 or more",Internet
+3216,46,Male,White,Under College,"$75,000 or more",Internet
+3223,88,Male,White,Under College,"$20,000 to $74,999",Doctor
+3224,44,Female,White,College and above,"$75,000 or more",Internet
+3226,69,Male,Others,Under College,"$20,000 to $74,999",Others
+3227,45,Male,Others,Under College,"$75,000 or more",Internet
+3228,59,Female,White,Under College,"$75,000 or more",Internet
+3231,53,Female,White,Under College,"$75,000 or more",Internet
+3233,57,Female,Others,College and above,"$20,000 to $74,999",Internet
+3235,71,Male,White,Under College,"$75,000 or more",Internet
+3238,57,Female,Others,College and above,"$75,000 or more",Internet
+3239,33,Male,White,College and above,"$75,000 or more",Others
+3241,56,Male,White,Under College,"$20,000 to $74,999",Doctor
+3244,58,Male,White,College and above,"$75,000 or more",Internet
+3246,66,Female,White,Under College,"$20,000 to $74,999",Others
+3249,48,Female,White,College and above,"$75,000 or more",Others
+3250,27,Male,White,College and above,"$0 to $19,999",Internet
+3252,68,Male,White,Under College,"$20,000 to $74,999",Internet
+3253,32,Female,Others,College and above,"$20,000 to $74,999",Internet
+3254,69,Female,Others,College and above,"$75,000 or more",Internet
+3255,52,Female,Others,Under College,"$20,000 to $74,999",Internet
+3258,45,Female,White,Under College,"$75,000 or more",Internet
+3262,60,Female,White,Under College,"$20,000 to $74,999",Internet
+3265,43,Male,White,Under College,"$0 to $19,999",Internet
+3266,59,Female,White,Under College,"$75,000 or more",Internet
+3267,41,Male,White,College and above,"$75,000 or more",Internet
+3270,47,Female,Others,Under College,"$75,000 or more",Doctor
+3272,53,Male,White,Under College,"$20,000 to $74,999",Internet
+3273,75,Female,White,Under College,"$20,000 to $74,999",Internet
+3276,54,Male,White,Under College,"$75,000 or more",Internet
+3279,53,Female,Others,Under College,"$20,000 to $74,999",Others
+3280,59,Female,White,Under College,"$0 to $19,999",Doctor
+3281,52,Female,White,Under College,"$20,000 to $74,999",Internet
+3282,55,Male,White,College and above,"$0 to $19,999",Others
+3283,59,Female,White,College and above,"$75,000 or more",Internet
+3285,26,Male,White,College and above,"$20,000 to $74,999",Internet

@@ -1,0 +1,457 @@
+---
+title: "Data visualization for social networks"
+author: "Xiang Wu"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{References in abmdiff package development}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+<style type="text/css">
+body{ /* Normal  */
+      font-size: 24px;
+  }
+td {  /* Table  */
+  font-size: 20px;
+}
+h1.title {
+  font-size: 48px;
+  color: DarkRed;
+}
+h1 { /* Header 1 */
+  font-size: 36px;
+  color: DarkBlue;
+}
+h2 { /* Header 2 */
+    font-size: 32px;
+  color: DarkBlue;
+}
+h3 { /* Header 3 */
+  font-size: 28px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ /* Code block */
+    font-size: 24px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 24px;
+}
+</style>
+
+
+```{r,echo=FALSE,results='hide',message=FALSE}
+#install.packages("sand")
+library(sand)
+#install_sand_packages()
+```
+
+### 图论概念
+
+图的分类，按是否出现多重边（两个节点间存在多于一条边）或自环（存在一条边的两个顶点为同一顶点），可分为：
+
+- 简单图：不出现多重边或自环，其边称为正常边。
+- 多重图：出现多重边或自环。
+
+图的连通性和距离概念包括：
+
+- 邻接性(节点-节点)：两个节点通过一条边连接，那么这两个点是邻接的。这些节点可以称为邻居。
+- 关联性(节点-边)：当节点是边的一个端点时，那么这个节点和这个边是关联的。
+- 节点的度(节点)：与节点关联的边的数量。
+- 通路(walk，节点-节点)：可以从一个节点通过其他节点和边到达另一个节点。
+- 迹(trial，节点-节点)：不存在重复边的通路。
+- 路径(path，节点-节点)：不存在重复节点的通路。
+- 环(cycle，节点-节点)：起点和终点相同但其他所有节点都不同的长度至少为3的通路。
+- 回路(circuit，节点-节点)：起点和终点相同的迹。
+- 可达(reachable，节点-节点)：存在两个节点的通路，那么两个节点可达。
+- 连通(connected，图)：所有节点彼此间均可达，那么图是连通的。
+- 组件(component，子图)：最大化的连通子图，即任意增加V中的一个剩余节点都会破坏图的连通性。
+- 距离(distance，节点-节点)：节点间的距离是节点间的最短路径的长度。
+- 直径(diameter，图)：图中最长的距离
+
+图的聚集性以集聚系数来衡量a-b,b-c条件下，a-c的可能性。具体包括：
+
+- 整体集聚系数
+- 局部集聚系数
+- 平均集聚系数
+
+其他概念还包括：
+
+- 导出子图：给定全图G中的部分节点，包含这些节点以及节点之间的边的图。
+- 团：两两之间有边的顶点集合。
+- 互惠性：有向网络的边多大程度上是互惠的。
+
+### 图的创建与属性
+
+无向图和有向图的创建如下：
+
+```{r}
+# 无向图
+g <- igraph::graph_from_literal(1-2, 1-3, 2-3, 2-4, 3-5, 4-5, 4-6,
+                    4-7, 5-6, 6-7)
+# 有向图
+dg <- igraph::graph_from_literal(1-+2, 1-+3, 2++3)
+par(mfrow=c(1, 2))
+par(mar=c(1,1,1,1))
+plot(g)
+plot(dg)
+```
+
+特殊类型图的创建如下：
+
+```{r}
+# 其他特征图
+g.full <- igraph::make_full_graph(7)
+g.ring <- igraph::make_ring(7)
+g.tree <- igraph::make_tree(7, children=2, mode="undirected")
+g.star <- igraph::make_star(7, mode="undirected")
+par(mfrow=c(2, 2))
+par(mar=c(1,1,1,1))
+plot(g.full)
+plot(g.ring)
+plot(g.tree)
+plot(g.star)
+#par(mar=c(5.1 ,4.1, 4.1, 2.1))
+```
+
+图可以自定义属性:
+
+```{r}
+# 设置图属性
+g$name <- "Toy Graph"
+
+# 查看属性
+igraph::graph_attr_names(g)
+```
+
+图的常用方法如下：
+
+
+```{r}
+# 输出vertice和edge
+V(g)
+E(g)
+
+# 输出vertice和edge的count
+vcount(g)
+ecount(g)
+
+# 得到构成边的节点对
+get.edgelist(g)
+
+# 得到边的连接矩阵
+get.adjacency(g)
+
+# 是否是权重图
+is.weighted(g)
+
+# 是简单图还是多重图
+is.simple(g)
+
+# 是否连通
+is.connected(g)
+
+# 组件
+clusters(g)
+decompose.graph(g)
+
+# 直径
+diameter(g)
+
+# 导出子图
+h <- induced.subgraph(g, 1:5)
+
+# 节点或边的纳入与排除
+h <- h + vertices(c(6,7))
+g <- h + edges(c(4,6),c(4,7),c(5,6),c(6,7))
+
+# 集合论概念：并交差补
+h1 <- h
+h2 <- igraph::graph_from_literal(4-6, 4-7, 5-6, 6-7)
+g1 <- graph.union(h1,h2)
+
+# 团的普查
+data(karate)
+table(sapply(cliques(karate), length))
+
+# 极大团，不存在团的冗余
+table(sapply(maximal.cliques(karate), length))
+
+# 最大团的尺寸，团数
+clique.number(karate)
+
+# k核图，所有节点至少为k的最大子图
+cores <- graph.coreness(karate)
+
+# 有向图二元组普查
+aidsblog <- simplify(aidsblog)
+dyad.census(aidsblog)
+
+# 密度
+graph.density(karate)
+
+# 全局聚类系数(三元组闭合的比例)
+transitivity(karate)
+
+# 局部聚类系数
+transitivity(karate, "local", vids=c(1,34))
+
+# 互惠性
+reciprocity(aidsblog, mode="default")
+```
+
+节点可以自定义属性，更多可以参看布局的修饰：
+
+```{r}
+# 设置节点属性
+V(dg)$name <- c("Sam", "Mary", "Tom")
+V(dg)$gender <- c("M","F","M")
+V(dg)$color <- "red"
+
+# 查看属性
+list.vertex.attributes(dg)
+```
+
+
+节点的常用方法如下：
+
+```{r}
+# 节点的度
+degree(g)
+
+# 节点的强度
+graph.strength(g,2)  #节点相连边的权重和
+
+# 邻接性，邻居
+neighbors(g,1)
+
+# 节点邻居的平均度
+graph.knn(g,c(1,2))$knn
+```
+
+边的属性设置如下，更多可以参看布局的修饰：
+
+```{r}
+# 设置权重属性
+wg <- g
+E(wg)$weight <- runif(ecount(wg))
+
+# 查看属性
+list.edge.attributes(wg)
+```
+
+边的方法，尤其是涉及到相关聚集参数的方法，可以先将原来的图的点线进行转换，然后使用对应节点的方法即可。
+
+
+### 图的可视化
+
+图的布局有下面几种：
+
+- 环形布局
+- 弹簧模型
+- 树结构（环形、辐射、分层）
+- 增强的弹簧模型（适用大数据）
+
+```{r,message=FALSE}
+par(mar=c(1,1,1,1))
+# 载入数据
+g.l <- igraph::make_lattice(c(5, 5, 5))
+data(aidsblog)
+aidsblog = upgrade_graph(aidsblog)
+
+# 环形布局
+igraph.options(vertex.size=3, vertex.label=NA,
+   edge.arrow.size=0.5)
+par(mfrow=c(1, 2))
+plot(g.l, layout=layout.circle)
+title("5x5x5 Lattice")
+plot(aidsblog, layout=layout.circle)
+title("Blog Network")
+
+# 弹簧布局
+plot(g.l,layout=layout.fruchterman.reingold)
+title("5x5x5 Lattice")
+plot(aidsblog,layout=layout.fruchterman.reingold)
+title("Blog Network")
+
+# 树布局
+g.tree <- igraph::graph_from_literal(1-+2,1-+3,1-+4,2-+5,2-+6,2-+7,
+                         3-+8,3-+9,4-+10)
+par(mfrow=c(1, 3))
+igraph.options(vertex.size=30, edge.arrow.size=0.5,
+   vertex.label=NULL)
+plot(g.tree, layout=layout.circle)
+plot(g.tree, layout=layout.reingold.tilford(g.tree,
+   circular=T))
+plot(g.tree, layout=layout.reingold.tilford)
+
+# 增强的弹簧模型
+par(mfrow=c(1, 1))
+fblog = upgrade_graph(fblog)
+party.names <- sort(unique(V(fblog)$PolParty))
+party.nums.f <- as.factor(V(fblog)$PolParty)
+party.nums <- as.numeric(party.nums.f)
+l <- layout.drl(fblog)
+plot(fblog, layout=l, vertex.size=5, vertex.label=NA,
+   vertex.color=party.nums)
+```
+
+图的可视化中，节点的相对位置以及边的布置非常重要。如果存在其他的网络信息，可以通过调整节点和边的大小、形状、颜色加以整合实现布局的修饰。
+
+具体地，有两种办法：
+
+- 先画图再修饰
+- 设置修饰参数后在画图
+
+先画图再修饰如下：
+```{r,message=FALSE}
+par(mar=c(1,1,1,1))
+igraph.options(vertex.size=10, vertex.label=NA,
+   edge.arrow.size=0.5)
+library(igraphdata)
+data(karate)
+karate = upgrade_graph(karate)
+# 设置seed
+set.seed(42)
+l <- layout.kamada.kawai(karate)
+# 先画未修饰的
+par(mfrow=c(1,2))
+plot(karate, layout=l, vertex.label=NA)
+# 设置节点的名称
+V(karate)$label <- sub("Actor ", "", V(karate)$name)
+# 设置节点的形状
+V(karate)$shape <- "circle"
+V(karate)[c("Mr Hi", "John A")]$shape <- "rectangle"
+# 设置节点的颜色
+V(karate)[Faction == 1]$color <- "red"
+V(karate)[Faction == 2]$color <- "dodgerblue"
+# 设置节点的大小
+V(karate)$size <- 4*sqrt(graph.strength(karate))
+V(karate)$size2 <- V(karate)$size * .5
+# 设置边的宽度
+E(karate)$width <- E(karate)$weight
+# 设置边的颜色
+F1 <- V(karate)[Faction==1]
+F2 <- V(karate)[Faction==2]
+E(karate)[ F1 %--% F1 ]$color <- "pink"
+E(karate)[ F2 %--% F2 ]$color <- "lightblue"
+E(karate)[ F1 %--% F2 ]$color <- "yellow"
+# 较小节点的标签位置偏移
+V(karate)$label.dist <-
+    ifelse(V(karate)$size >= 10, 0, 0.75)
+# 再画修饰后的图形
+plot(karate, layout=l)
+```
+
+设置修饰参数后在画图如下：
+```{r,message=FALSE}
+par(mar=c(1,1,1,1))
+par(mfrow=c(1,1))
+data(lazega)
+lazega = upgrade_graph(lazega)
+# 节点颜色
+colbar <- c("red", "dodgerblue", "goldenrod")
+v.colors <- colbar[V(lazega)$Office]
+# 节点形状
+v.shapes <- c("circle", "square")[V(lazega)$Practice]
+# 节点大小
+v.size <- 3.5*sqrt(V(lazega)$Years)
+# 节点标签
+v.label <- V(lazega)$Seniority
+set.seed(42)
+l <- layout.fruchterman.reingold(lazega)
+plot(lazega, layout=l, vertex.color=v.colors,
+   vertex.shape=v.shapes, vertex.size=v.size,
+   vertex.label=v.label)
+```
+
+
+### 图模型
+
+随机图的“随机”二字体现在边的分布上。一个随机图实际上是将给定的顶点之间随机地连上边。假设将一些纽扣散落在地上，并且不断随机地将两个纽扣之间系上一条线，这样就得到一个随机图的例子。边的产生可以依赖于不同的随机方式，这样就产生了不同的随机图模型。例如，ER模型是指在给定n个顶点后，规定每两个顶点之间都有p的概率连起来且这些判定之间两两无关。
+
+性质为：
+
+- 节点对之间最短路径上的节点较少。
+- 聚集性较低
+- 随着边概率的不同，随机图可能会呈现不同的属性。对于最典型的ER模型，当p的值越过某些门槛时，ER随机图的性质会发生突然的改变。
+例如，当概率p大于某个临界值pc后，生成的随机图几乎必然是连通的。
+
+```{r}
+par(mar=c(1,1,1,1))
+# 生成
+g.er <- erdos.renyi.game(100, 0.02)
+plot(g.er, layout=layout.circle, vertex.label=NA)
+# 节点对之间最短路径上的节点较少
+average.path.length(g.er)
+diameter(g.er)
+# 聚集性较低
+transitivity(g.er)
+```
+
+
+广义随机图模型是在随机图的基础上，给定了固定的特征，然后随机生成图。性质为：
+
+- 未选定的特征在保证选定特征不变的基础上可以自有变化。
+- 原则上可以对图的定义进一步约束，从而保留度序列之外的其他特征，例如MCMC方法。
+
+```{r}
+par(mar=c(1,1,1,1))
+# 生成
+par(mfrow=c(1,2))
+degs <- c(2,2,2,2,3,3,3,3)
+g1 <- degree.sequence.game(degs, method="vl")
+g2 <- degree.sequence.game(degs, method="vl")
+plot(g1, vertex.label=NA)
+plot(g2, vertex.label=NA)
+
+# 两个图都是满足特定要求生成的，不同构
+graph.isomorphic(g1, g2)
+
+```
+
+小世界网络就是一个由大量顶点构成的图，其中任意两点之间的平均路径长度比顶点数量小得多。直观地讲，网络有很高的集聚性，但多数节点之间的距离非常短。性质为：
+
+- 高集聚系数
+- 小的最短路径长度
+- 常常出现枢纽
+
+```{r}
+par(mar=c(1,1,1,1))
+par(mfrow=c(1,1))
+# 1维 每个维度上25节点，5个邻居，重连概率0.05
+g.ws <- sample_smallworld(1, 25, 5, 0.05)
+plot(g.ws, layout=layout.circle, vertex.label=NA)
+# 高集聚系数
+transitivity(g.ws)
+# 小的最短路径长度
+average.path.length(g.ws)
+diameter(g.ws)
+```
+
+
+优先连接模型体现了模型随时间增长演化的过程。核心机制是“富者越富”，也就是每次迭代新增加一个节点，节点和每个边有一定的概率相连，边的度越高那么相连的概率就越大。性质为：
+
+- 当t(迭代次数)趋于无穷，图的度分布会趋向于一个幂指数为3的幂律分布。
+- 节点对建最短路径上的节点较少
+- 聚集性较低
+
+```{r}
+# 生成
+
+set.seed(42)
+g.ba <- sample_pa(100, directed=FALSE)
+# 可视化
+plot(g.ba, layout=layout.circle, vertex.label=NA)
+# 度分布，体现很强的异质性，体现强者越强
+hist(degree(g.ba), col="lightblue",
+   xlab="Degree", ylab="Frequency", main="")
+# 节点对建最短路径上的节点较少
+average.path.length(g.ba)
+diameter(g.ba)
+# 聚集性较低
+transitivity(g.ba)
+```

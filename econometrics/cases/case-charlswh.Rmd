@@ -1,0 +1,350 @@
+---
+title: "线性回归案例：中老年人抑郁水平研究"
+author: "吴翔"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+
+```
+
+## 概述
+
+```{r child = 'style.Rmd'}
+
+```
+
+我们通过案例来阐述如何得到可靠的回归分析结果。
+
+本案例源自CHARLS数据集，我们非常感谢CHARLS团队。若非如此，我们无法在本次教学中给出这个合适的案例。
+
+```{r}
+
+# clean the work directory
+rm(list = ls())
+
+# set seeds
+set.seed(123)
+
+# read dataset
+suppressMessages(library(tidyverse))
+suppressMessages(library(broom))
+suppressMessages(library(stargazer))
+load("charlswh.RData")
+charlswh <- charlswh %>%
+    rename(hukou = r4hukou) %>%
+    filter(hukou < 2) %>%
+    mutate(income = income / 10000)
+
+```
+
+可以看到，数据集包含`r nrow(charlswh)`个样本和`r ncol(charlswh)`个变量。
+
+```{r}
+
+# display variables
+str(charlswh)
+
+```
+
+各变量含义如下：
+
+-   抑郁水平`cesd10`：采用CESD-10抑郁量表测量得到的结果
+-   收入`income`：个人年收入，以万元计
+-   教育水平`educ`：虚拟变量，`educ = 0`表示小学及以下教育程度，`educ = 1`表示初中及以上教育程度
+-   户口`hukou`：虚拟变量，`hukou = 0`表示农村户口，`hukou = 1`表示城市户口
+
+各个变量分布情况如下：
+
+```{r}
+
+# depression
+summary(charlswh$cesd10)
+# income
+summary(charlswh$income)
+# hukou
+table(charlswh$hukou)
+# education
+table(charlswh$educ)
+
+```
+
+## 初步分析
+
+首先，分别估计三个模型。
+
+```{r, results = 'markup'}
+
+# estimate three models
+fit1 <- lm(cesd10 ~ income, data = charlswh)
+fit2 <- lm(cesd10 ~ income + educ, data = charlswh)
+fit3 <- lm(cesd10 ~ income + educ + hukou, charlswh)
+
+# summary of results
+summary(fit1)
+summary(fit2)
+summary(fit3)
+
+```
+
+相应地，可以将三个模型放置在同一个表格中，便于对比。
+
+```{r, results = 'asis'}
+
+# output as a table
+stargazer(fit1, fit2, fit3, type = "html")
+
+```
+
+我们选择了模型2，并展示回归结果图。
+
+```{r}
+
+# calculate regression diagnostics
+model.diag.metrics <- augment(fit2)
+# plot the fitted values
+ggplot(model.diag.metrics, aes(income, cesd10)) +
+  geom_point() +
+  stat_smooth(method = lm, se = FALSE) +
+  geom_segment(aes(xend = income, yend = .fitted), color = "red", size = 0.3)
+
+```
+
+## 回归诊断
+
+### 残差项的正态分布
+
+因变量很明显不服从正态分布，而QQ图也显示，残差项也明显不服从正态分布。
+
+```{r}
+
+# plot
+ggplot(charlswh, aes(x = cesd10)) + geom_histogram(bins = 50) + theme_bw()
+
+# residual
+plot(fit2, 2)
+
+```
+
+此时，可以采用简单的对数变换。考虑到有零值，我们采用$log(\alpha + \text{cesd10})$的方式完成变换。可以看到，对数变换使结果变量更加接近正态分布。
+
+```{r}
+
+# plot
+ggplot(charlswh, aes(x = log(cesd10 + 1))) + geom_histogram(bins = 50) + theme_bw()
+
+```
+
+此外，我们也可以采用Box-Cox变换，得到新的结果变量$y$。
+
+```{r}
+
+suppressMessages(library(MASS))
+# box-cox transformation
+a <- boxcox(I(cesd10 + 1) ~ 1, data = charlswh, lambda = seq(-6, 6, 1/10)) %>%
+    as.data.frame()
+# get the lambda value with the largest likelihood
+lambda <- a$x[which.max(a$y)]
+# get new response variable
+charlswh$y <- ((charlswh$cesd10 + 1) ^ lambda - 1)/lambda
+# plot
+ggplot(charlswh, aes(x = y)) + geom_histogram(bins = 50) + theme_bw()
+
+```
+
+计算三者的偏度，可以看到，Box-Cox变换效果最好。
+
+```{r}
+
+suppressMessages(library(e1071))
+# original variable
+skewness(charlswh$cesd10)
+# log transformation
+skewness(log(charlswh$cesd10 + 1))
+# box-cox transformation
+skewness(charlswh$y)
+
+```
+
+那么，我们采用Box-Cox变换，并重新检视几个回归模型。
+
+```{r, results = 'asis'}
+
+# estimate three models
+fit4 <- lm(y ~ income, data = charlswh)
+fit5 <- lm(y ~ income + educ, data = charlswh)
+fit6 <- lm(y ~ income + educ + hukou, charlswh)
+
+# output as a table
+stargazer(fit4, fit5, fit6, type = "html")
+
+```
+
+类似地，我们选择模型5，并再一次检视残差项的分布情况。可以看到，误差项已经接近正态分布了。
+
+```{r}
+
+# residual
+plot(fit5, 2)
+
+```
+
+类似地，展示散点图和回归线，分别查看`income`和`educ`和`y`的关系（似乎有异方差问题？）。
+
+```{r}
+
+# calculate regression diagnostics
+model.diag.metrics <- augment(fit5)
+# plot the fitted values ~ income
+ggplot(model.diag.metrics, aes(income, y)) +
+  geom_point() +
+  stat_smooth(method = lm, se = FALSE) +
+  geom_segment(aes(xend = income, yend = .fitted), color = "red", size = 0.3)
+# plot the fitted values ~ educ
+ggplot(model.diag.metrics, aes(educ, y)) +
+  geom_point() +
+  stat_smooth(method = lm, se = FALSE) +
+  geom_segment(aes(xend = educ, yend = .fitted), color = "red", size = 0.3)
+
+```
+
+### 模型的非线性及异方差
+
+从拟合值和（标准化）残差项来看，可能存在异方差和非线性问题，但是需要更多的检测以便进一步确定问题所在。
+
+```{r}
+
+# residual - fitted value
+plot(fit5, 1)
+
+# standardized residual - fitted value
+plot(fit5, 3)
+
+```
+
+更进一步，我们检测两个解释变量和（标准化）残差项的关系。
+
+```{r}
+
+# plot income ~ residual
+ggplot(model.diag.metrics, aes(income, .resid)) +
+  geom_point() + stat_smooth(method = lm, se = FALSE)
+
+# plot income ~ standardized residual
+ggplot(model.diag.metrics, aes(income, .std.resid)) +
+  geom_point() + stat_smooth(method = lm, se = FALSE)
+
+```
+
+可以看到，似乎存在如下非线性和异方差问题：`income`越大，抑郁水平的方差就越小。
+
+```{r}
+
+# plot educ ~ residual
+ggplot(model.diag.metrics, aes(educ, .resid)) +
+  geom_point() + stat_smooth(method = lm, se = FALSE)
+
+# plot educ ~ standardized residual
+ggplot(model.diag.metrics, aes(educ, .std.resid)) +
+  geom_point() + stat_smooth(method = lm, se = FALSE)
+
+```
+
+教育程度则未发现显著的异方差问题。
+
+为了解决以上问题，我们再次进行变换，即对收入取对数，从而希望消除非线性和异方差问题。
+
+```{r}
+
+# fit the new model
+fit7 <- lm(y ~ I(log(income)) + educ, data = charlswh)
+summary(fit7)
+
+```
+
+再来看散点图和回归线。
+
+```{r}
+
+# calculate regression diagnostics
+model.diag.metrics <- augment(fit7)
+# plot the fitted values ~ income
+ggplot(model.diag.metrics, aes(`I(log(income))`, y)) +
+  geom_point() + stat_smooth(method = lm, se = FALSE) +
+  geom_segment(aes(xend = `I(log(income))`, yend = .fitted), color = "red", size = 0.3)
+
+```
+
+以及收入的对数与标准化残差的关系。
+
+```{r}
+
+# plot log educ ~ standardized residual
+ggplot(model.diag.metrics, aes(`I(log(income))`, .std.resid)) +
+  geom_point() + stat_smooth(method = lm, se = FALSE)
+
+```
+
+可以看到，采用`log(income)`之后，可以认为并不存在明显的非线性和异方差问题。
+
+### 高影响点与异常值
+
+从图上可以看出，有三个高影响点。标准化残差绝对值未超过3，因此可以认为没有极端偏离回归线的异常值。
+
+```{r}
+
+# Cook's distance
+plot(fit7, 4)
+# leverage
+plot(fit7, 5)
+
+```
+
+此外，可以看到，对回归系数影响最大的是第164号样本。
+
+```{r, results = 'asis'}
+
+# remove the 164th sample and refit the model
+fit8 <- lm(y ~ I(log(income)) + educ, data = charlswh[-164, ])
+# output as a table
+stargazer(fit7, fit8, type = "html")
+
+```
+
+可以看到，删除这个样本之后，回归系数发生了较大变化，并且$R^{2}$有了显著增加。
+
+那么这个样本是否真的"异常"呢？
+
+```{r}
+
+# the 164th sample
+charlswh[164, ]
+
+```
+
+可以看到，第164个样本是：年收入0.025万元、农村户口、小学及以下教育程度，但是抑郁程度为0！
+
+换言之，这位低收入、低教育程度、农村户口的中老年受访者，拥有整个样本中最佳的精神健康状态，丝毫无抑郁的表现。
+
+那么，这个样本是否真的"异常"呢？应该来讲，我们并无充分的理由认为这是异常样本。更可能的情况是，这是真实的存在。因此，我们不宜排除这个观测样本。
+
+## 最终模型
+
+经过反复地回归诊断，我们选择了如下模型：
+
+$$
+\text{BoxCox}(cesd10_{i}) = \alpha + \beta_{1} \text{log}(income_{i}) + \beta_{2} educ_{i} + \epsilon_{i}.
+$$
+
+相应的回归结果为：
+
+```{r}
+
+# display the results
+summary(fit7)
+# save the results
+save(fit7, charlswh, file = "../ch3/charlswh.RData")
+
+```

@@ -1,0 +1,247 @@
+---
+title: "基本分类模型案例：儿童汽车座椅销售量预测"
+author: "吴翔"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+options(digits = 3)
+
+```
+## 概述
+
+我们通过R语言`ISLR`包中儿童使用的汽车座椅销售量的案例来阐述如何使用如下基本分类模型：
+
+- 决策树
+- 装袋法
+- 随机森林
+- 提升法
+
+数据集`Carseats`包含500家商店的儿童用汽车座椅的销售情况，以及商店/所在社区相关的变量，其变量如下所示。
+
+```{r}
+
+# clean the work directory
+rm(list = ls())
+
+# set seeds
+set.seed(123)
+
+# read dataset
+suppressMessages(library(ISLR))
+suppressMessages(library(tidyverse))
+data("Carseats")
+# display the variables
+str(Carseats)
+# summary of dataset
+summary(Carseats)
+
+```
+
+## 决策树
+
+我们先根据销售量是否大于8，将销售量转化为分类变量。
+
+```{r}
+
+# convert to categorical variable
+Carseats <- Carseats %>%
+  within(Sales <- as.factor(ifelse(Sales <= 8, "Low", "High")))
+# training set and validation set
+train <- sample(1:nrow(Carseats), 200)
+carseats.train <- Carseats[train, ]
+carseats.test <- Carseats[-train, ]
+
+```
+
+在训练集上运行决策树模型，
+
+```{r}
+
+suppressMessages(library(tree))
+# decision tree
+tree.fit <- tree(Sales ~ ., data = carseats.train)
+summary(tree.fit)
+# plot the tree
+plot(tree.fit)
+text(tree.fit, pretty = 0)
+
+```
+
+`summary()`函数给出的分类树偏差由$-2 \sum_{m} \sum_{k} n_{mk} \text{log}(p_{mk})$计算的。进而在测试集上使用决策树模型，并计算分类准确率。
+
+```{r}
+
+# predictions
+tree.pred <- predict(tree.fit, carseats.test, type = "class")
+# compare predictions with true values
+table(tree.pred, carseats.test$Sales)
+# performance
+mean(tree.pred == carseats.test$Sales)
+
+```
+
+此时决策树模型的分类准确率为`r mean(tree.pred == carseats.test$Sales)`。显然，训练集和测试集的准确率差异较大，出现了明显的过度拟合现象。
+
+为此，我们通过剪枝来改进分类效果，并采用交叉验证来选取最佳的成本复杂性参数`k`。
+
+```{r}
+
+# cross validation
+cv.tree.fit <- cv.tree(tree.fit, FUN = prune.misclass)
+cv.tree.fit
+# plot the results
+plot(cv.tree.fit$size, cv.tree.fit$dev, type = "b")
+plot(cv.tree.fit$k, cv.tree.fit$dev, type = "b")
+
+```
+
+`dev`为交叉验证错误率。因此，我们选择$size = 9$的子树。
+
+```{r}
+
+# subtree
+prune.tree.fit <- prune.misclass(tree.fit, best = 9)
+plot(prune.tree.fit)
+text(prune.tree.fit, pretty = 0)
+
+```
+
+重新在测试集上运行，并评估效果。
+
+```{r}
+
+# predictions
+tree.pred <- predict(prune.tree.fit, carseats.test, type = "class")
+# compare predictions with true values
+table(tree.pred, carseats.test$Sales)
+# performance
+mean(tree.pred == carseats.test$Sales)
+
+```
+
+此时决策树模型的分类准确率为`r mean(tree.pred == carseats.test$Sales)`。显然，测试集的准确率有明显改善。
+
+## 装袋法
+
+使用`randomForest`包实现装袋法和随机森林模型。
+
+```{r}
+
+suppressMessages(library(randomForest))
+# bagging
+bag.fit <- randomForest(Sales~., data = carseats.train, mtry = 10, importance = TRUE)
+bag.fit
+
+```
+
+评估在测试集上的分类效果。
+
+```{r}
+
+# predictions
+bag.pred <- predict(bag.fit, carseats.test, type = "class")
+# compare predictions with true values
+table(bag.pred, carseats.test$Sales)
+# performance
+mean(bag.pred == carseats.test$Sales)
+
+```
+
+装袋法模型的分类准确率为`r mean(bag.pred == carseats.test$Sales)`，显著优于基本决策树模型的分类效果。
+
+进一步，可以看到装袋法中各个预测变量的重要程度。
+
+```{r}
+
+# important features
+importance(bag.fit)
+# plot
+varImpPlot(bag.fit)
+
+```
+
+## 随机森林
+
+随机森林与装袋法的区别仅仅在于，是否考虑所有预测变量。随机森林模型中，取`\sqrt{p} = \sqrt{10} = 3`个预测变量，即`mtry = 3`。
+
+
+```{r}
+
+# random forest
+rf.fit <- randomForest(Sales~., data = carseats.train, mtry = 3, importance = TRUE)
+rf.fit
+
+```
+
+评估在测试集上的分类效果。
+
+```{r}
+
+# predictions
+rf.pred <- predict(rf.fit, carseats.test, type = "class")
+# compare predictions with true values
+table(rf.pred, carseats.test$Sales)
+# performance
+mean(rf.pred == carseats.test$Sales)
+
+```
+
+随机森林模型的分类准确率为`r mean(rf.pred == carseats.test$Sales)`，显著优于基本决策树模型的分类效果。
+
+进一步，可以看到随机森林中各个预测变量的重要程度。
+
+```{r}
+
+# important features
+importance(rf.fit)
+# plot
+varImpPlot(rf.fit)
+
+```
+
+## 提升法
+
+采用`gbm`包运行提升法模型。
+
+
+```{r}
+
+suppressMessages(library(gbm))
+carseats.train$Sales <- ifelse(carseats.train$Sales == "High", 1, 0)
+# boosting
+boost.fit <- gbm(Sales~., data = carseats.train, distribution = "bernoulli", n.trees = 500, interaction.depth = 4)
+summary(boost.fit)
+
+```
+
+评估在测试集上的分类效果。
+
+```{r}
+
+# predictions
+boost.pred <- ifelse(predict(boost.fit, carseats.test, n.trees = 500, type = "response") >= 0.5, "High", "Low")
+# compare predictions with true values
+table(boost.pred, carseats.test$Sales)
+# performance
+mean(boost.pred == carseats.test$Sales)
+
+```
+
+提升法模型的分类准确率为`r mean(boost.pred == carseats.test$Sales)`，显著优于基本决策树模型的分类效果。
+
+## 总结
+
+最后，我们给出各个分类模型的效果。
+
+```{r}
+
+# performance comparison
+performance <- c(mean(tree.pred == carseats.test$Sales), mean(bag.pred == carseats.test$Sales), mean(rf.pred == carseats.test$Sales), mean(boost.pred == carseats.test$Sales))
+names(performance) <- c("tree", "bagging", "random forest", "boosting")
+performance
+
+```

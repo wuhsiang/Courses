@@ -1,0 +1,199 @@
+---
+title: "基本分类模型案例：股票市场走势预测"
+author: "吴翔"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+options(digits = 3)
+
+```
+## 概述
+
+我们通过R语言`ISLR`包中股票市场走势的案例来阐述如何使用如下基本分类模型：
+
+- logistic回归
+- LDA
+- QDA
+- KNN
+
+数据集`Smarket`包含了2001-2005年1250天里S&P 500股票指数的投资回报率。Lag1 ~ Lag5是过去5个交易日的投资回报率，Volume为前一交易日的股票成交量（单位为十亿），Today为当日的投资回报率，Direction为市场走势方向（Up或者Down）。
+
+```{r}
+
+# clean the work directory
+rm(list = ls())
+
+# set seeds
+set.seed(123)
+
+# read dataset
+suppressMessages(library(ISLR))
+suppressMessages(library(tidyverse))
+data("Smarket")
+# display the variables
+str(Smarket)
+# summary of dataset
+summary(Smarket)
+
+```
+
+## logistic回归
+
+我们用2001-2004年的数据作为训练集，2005年的数据作为测试集。
+
+```{r}
+
+# training set
+train <- Smarket$Year < 2005
+smarket.test <- Smarket[!train, ]
+smarket.train <- Smarket[train, ]
+
+```
+
+训练集包含`r nrow(smarket.train)`个样本，测试集包含`r nrow(smarket.test)`个样本。
+
+```{r}
+
+# logistic regression
+glm.fit <- glm(Direction ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5 + Volume, data = smarket.train, family = binomial)
+summary(glm.fit)
+# predictions
+glm.pred <- ifelse(predict(glm.fit, smarket.test, type = "response") > 0.5, "Up", "Down")
+# compare predictions with true values
+table(glm.pred, smarket.test$Direction)
+# performance
+mean(glm.pred == smarket.test$Direction)
+
+```
+
+可以看到，logistic回归预测的准确率为`r mean(glm.pred == smarket.test$Direction)`，小于随机猜测。
+
+检视模型，发现纳入了过多无关变量，因而出现了过度拟合的问题。因此，仅纳入Lag1和Lag2，重新运行logistic回归模型。
+
+
+```{r}
+
+# logistic regression
+glm.fit <- glm(Direction ~ Lag1 + Lag2, data = smarket.train, family = binomial)
+summary(glm.fit)
+# predictions
+glm.pred <- ifelse(predict(glm.fit, smarket.test, type = "response") > 0.5, "Up", "Down")
+# compare predictions with true values
+table(glm.pred, smarket.test$Direction)
+# performance
+mean(glm.pred == smarket.test$Direction)
+
+```
+
+此时logistic回归预测的准确率为`r mean(glm.pred == smarket.test$Direction)`，略大于随机猜测。
+
+## LDA
+
+采用LDA预测股票市场走势。
+
+```{r}
+
+suppressMessages(library(MASS))
+# LDA
+lda.fit <- lda(Direction ~ Lag1 + Lag2, data = smarket.train)
+lda.fit
+# plot
+plot(lda.fit)
+
+```
+
+类似地，评估预测效果。
+
+```{r}
+
+# predictions
+lda.pred <- predict(lda.fit, smarket.test)
+# compare predictions with true values
+table(lda.pred$class, smarket.test$Direction)
+# performance
+mean(lda.pred$class == smarket.test$Direction)
+
+```
+
+LDA预测的准确率为`r mean(lda.pred$class == smarket.test$Direction)`，略大于随机猜测，与logistic回归相当。
+
+
+## QDA
+
+采用QDA预测股票市场走势。
+
+```{r}
+
+# QDA
+qda.fit <- qda(Direction ~ Lag1 + Lag2, data = smarket.train)
+qda.fit
+
+```
+
+类似地，评估预测效果。
+
+```{r}
+
+# predictions
+qda.pred <- predict(qda.fit, smarket.test)
+# compare predictions with true values
+table(qda.pred$class, smarket.test$Direction)
+# performance
+mean(qda.pred$class == smarket.test$Direction)
+
+```
+
+QDA预测的准确率为`r mean(qda.pred$class == smarket.test$Direction)`，高于logistic回归和LDA。
+
+
+## KNN
+
+采用KNN预测股票市场走势。
+
+```{r}
+
+suppressMessages(library(class))
+train.X <- smarket.train[, c("Lag1", "Lag2")]
+test.X <- smarket.test[, c("Lag1", "Lag2")]
+train.Direction <- smarket.train$Direction
+# KNN
+accuracy <- NULL
+for (kn in 1:6){
+  knn.pred <- knn(train = train.X, test = test.X, cl = train.Direction, k = kn)  
+  accuracy <- c(accuracy, mean(knn.pred == smarket.test$Direction))
+}
+# accuracy for k = 1, ..., 6
+accuracy
+
+```
+
+可以看到，KNN预测的最高准确率为`r max(accuracy)`，此时$K = 3$。
+
+```{r}
+
+# K = 3
+knn.pred <- knn(train = train.X, test = test.X, cl = train.Direction, k = 3)  
+# compare predictions with true values
+table(knn.pred, smarket.test$Direction)
+# performance
+mean(knn.pred == smarket.test$Direction)
+
+```
+
+
+## 总结
+
+最后，我们给出各个分类模型的效果。
+
+```{r}
+
+# performance comparison
+performance <- c(mean(glm.pred == smarket.test$Direction), mean(lda.pred$class == smarket.test$Direction), mean(qda.pred$class == smarket.test$Direction), mean(knn.pred == smarket.test$Direction))
+names(performance) <- c("logistic", "LDA", "QDA", "KNN")
+performance
+
+```
