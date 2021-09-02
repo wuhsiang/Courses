@@ -184,6 +184,54 @@ Francis Galton（以及Karl Pearson）研究
 
 **课堂讨论: 匹配方法和随机对照试验方法的区别（轮回）？**
 
+
+## 经典的现实问题
+
+请思考面临的一些现实问题：
+
+- Galton的身高研究：遗传因素如何影响人类的身高？换言之，父代的身高如何影响子代的身高？
+- 兰德医疗保险实验（RAND Health Insurance Experiment）：更慷慨而全面的医疗保险是否会影响患者的医疗使用行为及健康水平？
+- 法定饮酒年龄如何影响地区的死亡率？
+- 教育年限如何影响工作收入？
+- ...
+
+我们希望理解这些议题，其共通之处是什么？
+
+解释变量（explanatory variable） --> 结果变量（outcome variable）
+
+## 回归模型设定
+
+我们先考虑最简单的情形：一元线性回归模型。我们希望探讨解释变量$X$如何影响结果变量$Y$，且在总体中随机抽取了$n$个观测样本，由此得到$(X_{i}, Y_{i})$。那么，一元线性回归模型设定为：
+$$
+Y_{i} = \alpha + \beta X_{i} + \epsilon_{i}, i \in [1, n].
+$$
+
+其中$\epsilon_{i}$为误差项，它代表了未被纳入模型的因素，亦即除$X$以外的因素，对结果变量的影响。因而，给定$X_{i}$时，我们估计或预测结果变量为：
+$$
+\hat{Y_{i}} = Y_{i} - \epsilon_{i}.
+$$
+
+## 理解回归的三种视角
+
+回归模型考虑解释变量$X$与结果变量$Y$的关系，
+$$
+Y_{i} = f(X_{i}) + \epsilon_{i} = \alpha + \beta X_{i} + \epsilon_{i}
+$$
+将观测值$Y_{i}$分为结构部分$f(X_{i})$和随机部分$\epsilon_{i}$，并可以从**三个视角**来理解：
+
+- **因果性**（计量经济领域）：观测项 = 机制项 + 干扰项
+- **预测性**（机器学习领域）：观测项 = 预测项 + 误差项
+- **描述性**（统计领域）：观测项 = 概括项 + 残差项
+
+本课程主要采取因果性和描述性的视角：在给定情境下采取因果性视角，在一般情形下采取描述性视角。
+
+## Galton的身高研究
+
+![Galton的身高研究](figures/galton-scatter.png){width=45%}
+
+- 探讨“父代的身高如何影响子代的身高？”，到底意味着什么？
+- 给定父代的身高，我们如何估计或预测子代的身高？
+
 ## 社会科学定量研究逻辑
 
 社会科学定量研究与自然科学定量研究的区别：
@@ -193,19 +241,104 @@ Francis Galton（以及Karl Pearson）研究
 - 方法：归纳法 vs 演绎法
 - 特征：特定**情境**下的规律 vs 普适规律
 
-因而，社会科学定量研究即是，在特定的**社会（或管理）情境**，选取合宜的解释变量，以尽可能理解总体中结果变量的变异的来源。
+因而，社会科学定量研究即是，在特定的**社会（或管理）情境**，选取合宜的解释变量，以尽可能理解总体中结果变量的**变异的来源**。**变异性**是社会科学研究的真正本质。
 
-## 理解回归的三种视角
 
-回归模型考虑解释变量$x$（或解释变量向量$X_{i}$）与结果变量$y$的关系，
+## 条件分布
+
+![条件分布](figures/conddist.png){width=45%}
+
+给定$X = X_{k}$，对应的多个$Y$值，应当如何给出其估计或预测值$\hat{Y}|X=X_{k}$？
+
+
+## 线性回归核心假设-1：（误差）独立同分布假设
+
+给定$X = X_{k}$时，结果变量存在多个值，进一步假定其分布为
 $$
-y_{i} = f(X_{i}) + \epsilon_{i} = \beta X_{i} + \epsilon_{i}
+Y | X = X_{k} \sim N(\mu_{k}, \sigma^{2}).
 $$
-将观测值$y_{i}$分为结构部分$f(X_{i})$和随机部分$\epsilon_{i}$，并可以从**三个视角**来理解：
+从而给定$X = X_{k}$时，结果变量的合理预测值是其条件均值或条件期望，
+$$
+\hat{Y} = E(Y | X = X_{k}) = \mu_{k}.
+$$
+这一假定也意味着，误差项服从
+$$
+\epsilon_{i} \text{ i.i.d. } \sim N(0, \sigma^{2}).
+$$
 
-- **因果性**（计量经济领域）：观测项 = 机制项 + 干扰项
-- **预测性**（机器学习领域）：观测项 = 预测项 + 误差项
-- **描述性**（统计领域）：观测项 = 概括项 + 残差项
+## 线性回归核心假设-2：线性模型假设
+
+线性模型可以从两个方面理解：
+
+- 关于变量的线性（linearity in the variables）：结果变量的条件期望$E(Y|X)$是解释变量$X$的线性函数，即$E(Y|X) = \alpha + \beta X$。这一视角下，$E(Y|X) = \alpha + \beta X^{2}$不是线性模型。
+- 关于参数的线性（linearity in the parameters）：结果变量的条件期望$E(Y|X)$是参数$\beta$的线性函数，因而$E(Y|X) = \alpha + \beta X^{2}$是线性模型。
+
+从建模的角度来看，第二个解释更合适。因为使用新变量$X' = X^{2}$替换原始变量$X$之后，即可变换为通常形式的线性模型。
+
+
+## 线性模型假设：图示
+
+![总体回归线](figures/condmean.png){width=45%}
+
+总体回归线穿过$(X_{k},  \mu_{Y|X_{k}})$。参数$\beta$刻画了$X$的变化对$Y$的**条件期望**的影响。
+$$
+E(Y|X = X_{k}) = \mu_{k} = \alpha + \beta X_{k}.
+$$
+
+
+## 线性模型假设：建模层面
+
+![线性建模示例](figures/linearinparameters.png){width=60%}
+
+以上两个模型，是否属于线性模型的范畴？
+
+
+## 线性回归核心假设-3：正交或外生假设
+
+解释变量$X$是外生的（exogenous），或者说是确定性的（deterministic）。例如在随机对照实验中，解释变量$X$是事先确定的实验处理方案。这意味着，解释变量$X$不受误差项$\epsilon$（亦即没有纳入模型的、遗漏的变量）的影响。因此，外生假设也称为正交假设：
+$$
+X \perp \epsilon.
+$$
+或者，
+$$
+\text{Cov}(X, \epsilon) = 0.
+$$
+
+## 线性回归核心假设
+
+核心假设包括三条：
+
+1. （误差）独立同分布假设: $\epsilon_{i} \text{ i.i.d. } \sim N(0, \sigma^{2})$
+2. 线性模型假设：$E(Y|X) = \alpha + \beta X$
+3. 正交或外生假设：$X \perp \epsilon$
+
+## 核心假设如何作用于线性回归模型？
+
+在回归模型的经典设定下，
+$$
+Y_{i} = \alpha + \beta X_{i} + \epsilon_{i},
+$$
+对等式两边同时取条件期望，
+$$
+E[Y|X] = \alpha + \beta X + E[\epsilon|X],
+$$
+由正交假设$X \perp \epsilon$以及误差独立同分布假设$\epsilon_{i} \text{ i.i.d. } \sim N(0, \sigma^{2})$，可知$E[\epsilon|X] = 0$，从而：
+$$
+E[Y|X] = \hat{Y} = \alpha + \beta X.
+$$
+
+## 回归的含义
+
+> Regression analysis is concerned with the study of the dependence of one variable, the
+dependent variable, on one or more other variables, the explanatory variables, with a view to
+estimating and/or predicting the (population) mean or average value of the former in terms of
+the known or fixed (in repeated sampling) values of the latter. -- By Gujarati & Porter (2008), "Basic Econometrics".
+
+回归的现代解释，包含了如下核心概念：
+
+- 条件期望（conditional expectation）：给定解释变量$X = X_{k}$时，如何估计或者预测结果变量的总体均值$E(Y)$？
+
+
 
 ## 回归模型设定
 
@@ -236,7 +369,7 @@ $$
 
 ## 总体回归线
 
-![总体回归线](figures/condmean.png){width=60%}
+![总体回归线](figures/condmean.png){width=45%}
 
 **简化示例: 虚拟变量 --> 多分类变量 --> 连续变量**
 
