@@ -3,7 +3,7 @@ title: 线性回归分析：原理、建模与诊断
 author:
  - 授课教师：吴翔 \newline
  - 邮箱：wuhsiang@hust.edu.cn
-date: "March 20, 2021"
+date: "Sept 16, 2021"
 linestretch: 1.25
 fontsize: 18
 header-includes:
@@ -197,7 +197,7 @@ Francis Galton（以及Karl Pearson）研究
 
 ## 理解回归的三种视角
 
-回归模型考虑解释变量$x$与结果变量$y$的关系，
+回归模型考虑解释变量$x$（或解释变量向量$X_{i}$）与结果变量$y$的关系，
 $$
 y_{i} = f(X_{i}) + \epsilon_{i} = \beta X_{i} + \epsilon_{i}
 $$
