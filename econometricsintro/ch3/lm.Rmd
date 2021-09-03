@@ -189,24 +189,25 @@ Francis Galton（以及Karl Pearson）研究
 
 请思考面临的一些现实问题：
 
-- Galton的身高研究：遗传因素如何影响人类的身高？换言之，父代的身高如何影响子代的身高？
-- 兰德医疗保险实验（RAND Health Insurance Experiment）：更慷慨而全面的医疗保险是否会影响患者的医疗使用行为及健康水平？
-- 法定饮酒年龄如何影响地区的死亡率？
-- 教育年限如何影响工作收入？
+- Galton的身高研究：遗传因素如何影响人类的身高？换言之，\underline{父代的身高}如何影响\underline{子代的身高}？
+- 兰德医疗保险实验（RAND Health Insurance Experiment）：更慷慨而全面的\underline{医疗保险}是否会影响患者的\underline{医疗使用行为}及\underline{健康水平}？
+- \underline{法定饮酒年龄}如何影响\underline{地区的死亡率}？
+- \underline{教育年限}如何影响\underline{工作收入}？
+- 过去三十年里，民众的\underline{经济收入}如何（随着\underline{时间}）变化？
 - ...
 
 我们希望理解这些议题，其共通之处是什么？
 
-解释变量（explanatory variable） --> 结果变量（outcome variable）
+\textcolor{red}{解释变量}（explanatory variable, $X$） --> \textcolor{red}{结果变量}（outcome variable, $Y$）
 
 ## 回归模型设定
 
-我们先考虑最简单的情形：一元线性回归模型。我们希望探讨解释变量$X$如何影响结果变量$Y$，且在总体中随机抽取了$n$个观测样本，由此得到$(X_{i}, Y_{i})$。那么，一元线性回归模型设定为：
+我们先考虑最简单的情形：一元线性回归模型。我们希望探讨解释变量$X$如何影响结果变量$Y$，且在总体中随机抽取了$n$个观测样本，由此得到$(X_{i}, Y_{i})$。那么，一元线性\textcolor{red}{回归模型设定}为：
 $$
 Y_{i} = \alpha + \beta X_{i} + \epsilon_{i}, i \in [1, n].
 $$
 
-其中$\epsilon_{i}$为误差项，它代表了未被纳入模型的因素，亦即除$X$以外的因素，对结果变量的影响。因而，给定$X_{i}$时，我们估计或预测结果变量为：
+其中$\epsilon_{i}$为\textcolor{red}{误差项}，它代表了未被纳入模型的因素，亦即除$X$以外的因素，对结果变量的影响。因而，给定$X_{i}$时，我们\textcolor{red}{估计或预测}结果变量为：
 $$
 \hat{Y_{i}} = Y_{i} - \epsilon_{i}.
 $$
@@ -217,20 +218,20 @@ $$
 $$
 Y_{i} = f(X_{i}) + \epsilon_{i} = \alpha + \beta X_{i} + \epsilon_{i}
 $$
-将观测值$Y_{i}$分为结构部分$f(X_{i})$和随机部分$\epsilon_{i}$，并可以从**三个视角**来理解：
+将观测值$Y_{i}$分为\textcolor{blue}{结构部分}$\hat{Y}_{i} = f(X_{i})$和\textcolor{blue}{随机部分}$\epsilon_{i}$，并可以从\textcolor{red}{三个视角}来理解：
 
-- **因果性**（计量经济领域）：观测项 = 机制项 + 干扰项
-- **预测性**（机器学习领域）：观测项 = 预测项 + 误差项
-- **描述性**（统计领域）：观测项 = 概括项 + 残差项
+- \textcolor{red}{因果性}（计量经济领域）：观测项 = 机制项 + 干扰项
+- \textcolor{red}{预测性}（机器学习领域）：观测项 = 预测项 + 误差项
+- \textcolor{red}{描述性}（统计领域）：观测项 = 概括项 + 残差项
 
-本课程主要采取因果性和描述性的视角：在给定情境下采取因果性视角，在一般情形下采取描述性视角。
+本课程\textcolor{blue}{结合因果性和描述性}的视角：在给定情境下采取因果性视角，在一般情形下采取描述性视角。
 
 ## Galton的身高研究
 
 ![Galton的身高研究](figures/galton-scatter.png){width=45%}
 
 - 探讨“父代的身高如何影响子代的身高？”，到底意味着什么？
-- 给定父代的身高，我们如何估计或预测子代的身高？
+- 给定父代的身高，我们如何估计或预测子代的身高？换言之，如何定义预测值$\hat{Y}$？如何建立预测值$\hat{Y}$与解释变量$X$之间的关系？
 
 ## 社会科学定量研究逻辑
 
@@ -239,25 +240,25 @@ $$
 - 核心区别：变异（variation） vs 共相（universal，相对应的是殊相particular）
 - 结论：或然性 vs 必然性
 - 方法：归纳法 vs 演绎法
-- 特征：特定**情境**下的规律 vs 普适规律
+- 特征：特定\textcolor{red}{情境}下的规律 vs 普适规律
 
-因而，社会科学定量研究即是，在特定的**社会（或管理）情境**，选取合宜的解释变量，以尽可能理解总体中结果变量的**变异的来源**。**变异性**是社会科学研究的真正本质。
+因而，社会科学定量研究即是，在特定的\textcolor{red}{社会（或管理）情境}，选取合宜的解释变量，以尽可能理解总体中结果变量的\textcolor{red}{变异的来源}。\textcolor{red}{变异性}是社会科学研究的真正本质。
 
 
 ## 条件分布
 
 ![条件分布](figures/conddist.png){width=45%}
 
-给定$X = X_{k}$，对应的多个$Y$值，应当如何给出其估计或预测值$\hat{Y}|X=X_{k}$？
+给定$X = X_{k}$，对应的**多个**$Y$值，应当如何给出其估计或预测值$\hat{Y}|X=X_{k}$？
 
 
 ## 线性回归核心假设-1：（误差）独立同分布假设
 
-给定$X = X_{k}$时，结果变量存在多个值，进一步假定其分布为
+给定$X = X_{k}$时，结果变量存在多个值，进一步\textcolor{red}{假定其分布}为
 $$
 Y | X = X_{k} \sim N(\mu_{k}, \sigma^{2}).
 $$
-从而给定$X = X_{k}$时，结果变量的合理预测值是其条件均值或条件期望，
+从而给定$X = X_{k}$时，结果变量的合理预测值$\hat{Y}$是其\textcolor{blue}{条件均值}或\textcolor{red}{条件期望}，
 $$
 \hat{Y} = E(Y | X = X_{k}) = \mu_{k}.
 $$
@@ -266,21 +267,23 @@ $$
 \epsilon_{i} \text{ i.i.d. } \sim N(0, \sigma^{2}).
 $$
 
+**讨论**：严重偏态分布下，应如何合理选择预测值$\hat{Y}$？
+
 ## 线性回归核心假设-2：线性模型假设
 
-线性模型可以从两个方面理解：
+尽管模型设定上，我们容易直观理解线性假设的含义。但更本质地，线性模型假设可以从两个方面理解：
 
-- 关于变量的线性（linearity in the variables）：结果变量的条件期望$E(Y|X)$是解释变量$X$的线性函数，即$E(Y|X) = \alpha + \beta X$。这一视角下，$E(Y|X) = \alpha + \beta X^{2}$不是线性模型。
-- 关于参数的线性（linearity in the parameters）：结果变量的条件期望$E(Y|X)$是参数$\beta$的线性函数，因而$E(Y|X) = \alpha + \beta X^{2}$是线性模型。
+- \textcolor{blue}{关于变量的线性}（linearity in the variables）：结果变量的条件期望$E(Y|X)$是解释变量$X$的线性函数，即$E(Y|X) = \alpha + \beta X$。这一视角下，$E(Y|X) = \alpha + \beta X^{2}$不是线性模型。
+- \textcolor{red}{关于参数的线性}（linearity in the parameters）：结果变量的条件期望$E(Y|X)$是参数$\beta$的线性函数，因而$E(Y|X) = \alpha + \beta X^{2}$是线性模型。
 
-从建模的角度来看，第二个解释更合适。因为使用新变量$X' = X^{2}$替换原始变量$X$之后，即可变换为通常形式的线性模型。
+两个方面的理解都是合理的。从建模的角度来看，第二个解释更合适。因为使用新变量$X' = X^{2}$替换原始变量$X$之后，即可变换为通常形式的线性模型。
 
 
 ## 线性模型假设：图示
 
 ![总体回归线](figures/condmean.png){width=45%}
 
-总体回归线穿过$(X_{k},  \mu_{Y|X_{k}})$。参数$\beta$刻画了$X$的变化对$Y$的**条件期望**的影响。
+总体回归线穿过$(X_{k},  \mu_{Y|X_{k}})$这一系列点。参数$\beta$刻画了$X$的变化对$Y$的\textcolor{red}{条件期望}的影响。
 $$
 E(Y|X = X_{k}) = \mu_{k} = \alpha + \beta X_{k}.
 $$
@@ -295,7 +298,7 @@ $$
 
 ## 线性回归核心假设-3：正交或外生假设
 
-解释变量$X$是外生的（exogenous），或者说是确定性的（deterministic）。例如在随机对照实验中，解释变量$X$是事先确定的实验处理方案。这意味着，解释变量$X$不受误差项$\epsilon$（亦即没有纳入模型的、遗漏的变量）的影响。因此，外生假设也称为正交假设：
+解释变量$X$是\textcolor{red}{外生的}（exogenous），或者说是确定性的（deterministic）。例如在随机对照实验中，解释变量$X$是事先确定的实验处理方案。这意味着，解释变量$X$不受误差项$\epsilon$（亦即没有纳入模型的、遗漏的变量）的影响。因此，外生假设也称为正交假设：
 $$
 X \perp \epsilon.
 $$
@@ -303,6 +306,8 @@ $$
 $$
 \text{Cov}(X, \epsilon) = 0.
 $$
+
+注：随机对照试验（RCT）严格符合外生假设，从而能够提供准确的因果效应估计。但RCT只是满足外生假设的一种形式，\textcolor{red}{观察研究}只要满足外生假设，也能够提供准确的因果效应估计。
 
 ## 线性回归核心假设
 
@@ -318,14 +323,15 @@ $$
 $$
 Y_{i} = \alpha + \beta X_{i} + \epsilon_{i},
 $$
-对等式两边同时取条件期望，
+在\textcolor{red}{误差独立同分布假设}下，对等式两边同时取\textcolor{red}{条件期望}，
 $$
 E[Y|X] = \alpha + \beta X + E[\epsilon|X],
 $$
-由正交假设$X \perp \epsilon$以及误差独立同分布假设$\epsilon_{i} \text{ i.i.d. } \sim N(0, \sigma^{2})$，可知$E[\epsilon|X] = 0$，从而：
+由\textcolor{red}{正交假设}$X \perp \epsilon$以及\textcolor{red}{误差独立同分布假设}$\epsilon_{i} \text{ i.i.d. } \sim N(0, \sigma^{2})$，可知$E[\epsilon|X] = 0$，从而：
 $$
 E[Y|X] = \hat{Y} = \alpha + \beta X.
 $$
+这意味着，\textcolor{red}{线性模型假设}与我们最初的经典设定是一致的。换言之，只有符合线性模型假设（及其它两个核心假设），最初的经典设定才是正确的，才不存在\textcolor{red}{模型错误设定}（model misspecification）问题。
 
 ## 回归的含义
 
@@ -336,7 +342,7 @@ the known or fixed (in repeated sampling) values of the latter. -- By Gujarati &
 
 回归的现代解释，包含了如下核心概念：
 
-- 条件期望（conditional expectation）：给定解释变量$X = X_{k}$时，如何估计或者预测结果变量的总体均值$E(Y)$？
+- \textcolor{red}{条件期望}（conditional expectation）：\textcolor{red}{给定}解释变量$X = X_{k}$时，如何估计或者预测结果变量的\textcolor{red}{总体均值}$E(Y)$？
 
 
 
