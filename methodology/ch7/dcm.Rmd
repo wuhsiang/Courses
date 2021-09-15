@@ -1,0 +1,150 @@
+---
+title: Chapter 7 实验法（二）：离散选择实验
+author:
+ - 授课教师：吴翔 \newline
+ - 邮箱：wuhsiang@hust.edu.cn
+date: "Oct 16, 2021"
+linestretch: 1.25
+fontsize: 18
+header-includes:
+  - \usepackage{ctex}
+output:
+  beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "beaver"
+    latex_engine: xelatex
+    toc: false
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+options(digits = 2)
+
+```
+
+## 授课内容
+
+1. 离散选择实验概述
+2. \textcolor{red}{离散选择实验的微观经济基础}
+3. 离散选择实验设计
+4. 离散选择实验估计
+5. 典型离散选择实验案例
+
+
+## 经典的现实问题
+
+请思考面临的一些现实决策问题：
+
+- 出差时，选择什么交通工具到天河机场？准备预订什么酒店？
+- 应当购买什么商业健康保险？或者还是不要购买？
+- 患者去哪一家医院就医？
+- 应当接种哪一种HPV疫苗？或者还是暂时不接种HPV疫苗？
+- ...
+
+## 决策与（离散）选择
+
+Hebert Simon认为：
+
+> \textcolor{red}{Decison making} is the heart of administration, and the vocabulary of administrative theory should be derived from the logic and psychology of \textcolor{red}{human choice}. -- By Hebert Simon
+
+或者决策的通行定义：
+
+> A decision is \textcolor{red}{choice} out of \textcolor{red}{several alternatives} (options) made by the decision maker to achieve some objectives in a given situation.
+
+## 手机消费例子
+
+![smartphone consumption decision](figures/dce-phone.png){width=75%}
+
+## 疫苗接种决策例子
+
+![vaccination decision](figures/dce-vaccine.png){width=80%}
+
+- 候选项（alternatives）
+- 属性（attributes）
+
+## 有限理性假设
+
+管理即是决策，而决策即是评估少数几个候选项（alternatives），并从中作出选择（choice）。其心理学基础是：
+
+- 决策资源是有限的，决策者是\textcolor{red}{有限理性}的
+- 决策资源：时间成本，经济成本，认知资源，信息
+- 信息时代的挑战：信息过载导致了注意力（亦即认知资源）稀缺
+
+## 如何决策：效用最大化原理
+
+第$i$个决策者（例如消费者、患者等）面临$J \geq 2$个候选项，仔细评估了这些候选项之后，选择了第$j (1 \leq J \leq J)$个候选项。我们应该如何理解这一决策？
+
+经济学解释：假设第$j (1 \leq J \leq J)$个候选项对于第$i$个决策者而言，效用为$U_{ij}$。那么，决策者所选择的候选项，必定是对他而言效用最大的，即\textcolor{red}{效用最大化原理}：
+$$
+U_{ij} \geq U_{ik}, 1 \leq k \leq J \text{ and } k \neq j.
+$$
+
+
+## 决策者视角 vs 研究者视角
+
+我们需要区分两个视角：
+
+- 决策者视角：总效用$U_{ij}$是已知的。
+- \textcolor{red}{研究者视角}：仅能观测到\textcolor{red}{部分效用}，而无法观测到总效用。
+
+因而，就研究者视角而言，需要将\textcolor{red}{总效用分解}为两部分：
+$$
+U_{ij} = V_{ij} + \epsilon_{ij}.
+$$
+其中$V_{ij}$是可以观测到的效用（observed utility），而误差项$\epsilon_{ij}$是不可观测的效用（unobserved utility）。
+
+## 选择概率
+
+由于研究者无法观测到总效用，因而可观测效用最大的候选项，就\textcolor{red}{不一定}是决策者所选择的候选项。因而，需要进一步假定，来处理观测到的选择（observed choice）$j$和可观测部分效用$V_{ij}$的关系。
+
+当误差项$\epsilon_{ij}$服从Gumbel分布（或称广义极值I型分布）时，第$i$个决策者选择第$j$个候选项的\textcolor{red}{概率}为：
+$$
+\text{Prob}(ij) = \frac{\exp(V_{ij})}{\sum_{k=1}^{J} \exp(V_{ik})}.
+$$
+这一概率用于后续极大似然估计法中的\textcolor{red}{似然函数构造}。
+
+## 如何评估候选项：效用函数
+
+决策者面临$J \geq 2$个候选项时，是\textcolor{red}{如何评估}这些候选项的？换言之，如何构造效用函数
+？
+
+\textcolor{red}{效用函数}（utility function）是\textcolor{red}{候选项属性}的函数，假定每个候选项有$P$个属性，$X_{jp} (1 \leq p \leq P)$，那么可观测部分效用$V_{ij}$通常建模为属性的线性函数：
+$$
+V_{ij} = \sum_{p=1}^{P} \beta_{ip} \cdot X_{jp}.
+$$
+
+## 效用函数计算示例
+
+假定决策者考虑疫苗接种，并且评估两款疫苗的两个属性：保护效力和副作用。疫苗A的保护效力为70%，副作用几乎没有；疫苗B的保护效力为90%，有中等程度的副作用。决策者赋予保护效力和（中等程度）副作用的权系数分别为10和-3，那么：
+$$
+V_{A} = 10 \times 70\% + 0 =7, V_{B} = 10 \times 90\% - 3 = 6.
+$$
+因此，决策者接种疫苗A的概率是：
+$$
+\text{Prob}(A) = \frac{\exp(7)}{\exp(7) + \exp(6)} = 0.73.
+$$
+
+
+## 什么是重要的：属性偏好
+
+决策者在评估这些候选项的时候，特定的属性发挥了什么作用？或者说，属性和效用是什么关系？
+
+决策者赋予属性的权系数称为\textcolor{red}{偏好}（preferences），即$\beta_{ip}$。偏好决定了属性如何构成效用。偏好是离散选择实验中需要估计的\textcolor{red}{参数}。
+
+疫苗接种决策中，对潜在副作用更加在意的个体，其副作用的属性偏好也就越大。
+
+
+## 偏好异质性：汝之蜜糖，彼之砒霜
+
+不同的决策者（例如消费者、患者等），各自看重不同的属性。换言之，决策者对特定属性的偏好通常是\textcolor{red}{异质的}（heterogeneous）。
+
+研究者可以权衡研究目标，对偏好做出进一步假定，通常包括三个方案：
+
+1. 偏好是同质的：$\beta_{ip} = \beta_{p}$，此时即是\textcolor{red}{多项logit模型}。
+2. 偏好在给定分组下是同质的：若第$i$个决策者属于第$s (1 \leq s \leq S)$组，则$\beta_{ip} = \beta_{sp}$，此时即是\textcolor{red}{潜类别logit模型}。
+3. 偏好是异质的：$\beta_{ip}$取决于个体特征，此时是\textcolor{red}{随机参数logit模型}；可以进一步采用分层logit模型来解释偏好异质性的来源。
+
+## 离散选择实验的微观经济学基础回顾
+
+![DCE decision-making framework](figures/decisionframework.png){width=60%}
