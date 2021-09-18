@@ -82,11 +82,49 @@ suppressMessages(library(stargazer))
 
 # 因果推断的反事实框架
 
+## 反事实与潜在结果
 
-## 反事实
 
 
-## Rubin
+
+
+## Rubin因果模型
+
+Rubin因果模型（Rubin Causal Model, RCM）逻辑如下。设$X_{i}$表示个体$i$是否接受处理或干预，$X_{i}=1$代表处理，$X_{i}=0$代表对照，而$Y_{i}$代表观测到的结果变量。
+
+另外，记$\{Y_{i}(1), Y_{i}(0)\}$代表个体$i$接受处理或者对照的潜在结果，那么个体$i$接受处理的因果效应即为：$Y_{i}(1)-Y_{i}(0)$。
+
+总体的平均因果效应（average causal effect, ACE）如下：
+$$
+ACE(X \rightarrow Y) = E[Y_{i}(1)-Y_{i}(0)].
+$$
+
+## Rubin因果模型（续）
+
+不幸的是，个体$i$要么接受处理，要么接受对照，因此两个潜在结果$\{Y_{i}(1), Y_{i}(0)\}$必然缺失一个，而只能观测到其中之一。因此，观测结果
+$$
+Y_{i}=
+\begin{cases}
+Y_{i}(1),\text{ if } X_{i} = 1;\\
+Y_{i}(0), \text{ if } X_{i} = 0.
+\end{cases}
+$$
+或者表示为，
+$$
+Y_{i} = X_{i} \cdot Y_{i}(1) + (1 - X_{i}) \cdot Y_{i}(0).
+$$
+
+## Rubin因果模型（续）
+
+问题在于，真实的平均因果效应$E[Y_{i}(1)-Y_{i}(0)]$与观测到的组间差异$E(Y_{i}|X_{i}=1) - E(Y_{i}|X_{i}=0)$是什么关系？
+
+## Rubin因果模型（续）
+
+个体$i$接受处理的因果效应可以分解为两部分，
+$$
+Y_{i}(1) - Y_{i}(0) = [Y_{i}(1) - Y_{i}|X_{i}=1] + [Y_{i}|X_{i}=1 - Y_{i}(0)]
+$$
+
 
 
 # 路径模型概述
@@ -136,7 +174,7 @@ dat <- data.frame(x = x, y = y, z = z)
 ```{r}
 
 # scatter plot
-ggplot(dat, aes(x = x, y = z)) + geom_point() + geom_smooth(method=lm, color="darkred", fill="blue") + theme_bw() 
+ggplot(dat, aes(x = x, y = z)) + geom_point() + geom_smooth(method=lm, color="darkred", fill="blue") + theme_bw()
 
 ```
 
@@ -179,7 +217,7 @@ dat <- data.frame(x = x, y = y, z = z)
 ```{r}
 
 # scatter plot
-ggplot(dat, aes(x = y, y = z)) + geom_point() + geom_smooth(method=lm, color="darkred", fill="blue") + theme_bw() 
+ggplot(dat, aes(x = y, y = z)) + geom_point() + geom_smooth(method=lm, color="darkred", fill="blue") + theme_bw()
 
 ```
 
@@ -221,7 +259,7 @@ dat <- data.frame(x = x, y = y, z = z)
 ```{r}
 
 # scatter plot
-ggplot(dat, aes(x = x, y = y)) + geom_point() + geom_smooth(method=lm, color="darkred", fill="blue") + theme_bw() 
+ggplot(dat, aes(x = x, y = y)) + geom_point() + geom_smooth(method=lm, color="darkred", fill="blue") + theme_bw()
 
 ```
 
@@ -236,4 +274,3 @@ fit2 <- lm(y ~ x + z, data = dat)
 stargazer(fit1, fit2, type = "latex", title = "对撞结构回归分析案例", header = FALSE, single.row = TRUE, digits = 2, keep.stat = c("rsq", "f"))
 
 ```
-
