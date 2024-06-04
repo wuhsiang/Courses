@@ -8,9 +8,12 @@
 
 以及研究生课程：
 
-- 《管理计量分析》：请参阅[econometrics](https://github.com/wuhsiang/Courses/tree/master/econometrics)文件夹。
-- 《管理科学研究方法》：请参阅[methodology](https://github.com/wuhsiang/Courses/tree/master/methodology)文件夹。
 - 《数据挖掘》：请参阅[datamining](https://github.com/wuhsiang/Courses/tree/master/datamining)文件夹。
+
+以及两门2024年前承担的课程：
+
+- 《管理计量分析》：请参阅[archived/econometrics](https://github.com/wuhsiang/Courses/tree/master/archived/econometrics)文件夹。
+- 《管理科学研究方法》：请参阅[archived/methodology](https://github.com/wuhsiang/Courses/tree/master/archived/methodology)文件夹。
 
 课件撰写：
 
